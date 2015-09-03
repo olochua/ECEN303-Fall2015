@@ -62,7 +62,7 @@
 * Jesse Yancy, jpy234, [jesseyancy23](https://github.com/jesseyancy23)
 * Seungwon Yoon, ysw0927, [buttonsense](https://github.com/buttonsense/)
 * Wenkui Ren, ren0587, [wenku9332](https://github.com/wenku9332/)
-
+* David Fawcett, dfawcett [dfawcett](https://github.com/dfawcett)
 
 ## Teaching Assistant
 
