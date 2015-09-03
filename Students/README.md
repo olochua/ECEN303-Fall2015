@@ -4,7 +4,7 @@
 ## Students
 
 * _Full Name_, _TAMU NetID_, _GitHubID_
-* George Anthony, gka243
+* George Anthony, gka243, [gka243](https://github.com/gka243/)
 * Allison Badgett, allisonbadgett, [allisonbadgett](https://github.com/allisonbadgett/)
 * Liliana Balboa, lbalboa100
 * Bailey Barksdale, bailey13, [bkb0917](https://github.com/bkb0917/)
