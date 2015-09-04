@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+
+%%  Dimensions and URL
+\usepackage[margin=1in]{geometry}
+\usepackage{color,adjustbox,amsmath}
+
+%%  Definitions
+\renewcommand{\baselinestretch}{1.1}
+\pagestyle{plain}
+
+%%  Cases
+\newif\ifsoln
+\solnfalse
+
+
+\begin{document}
+
+\begin{center}
+{\bfseries \LARGE Assignment Guidelines}
+\end{center}
+
+Random Signals \& Systems is a high enrollment course.
+To streamline the grading process, students are required to adhere to the following guidelines while producing solutions to assignments.
+In addition, you are expected to write neatly and legibly.
+Your work reflects on your professionalism and diligence as future engineers.
+Assignments that do not comply with these guidelines may be returned with a grade of zero.
+
+
+\paragraph{Student Identity:} At the top-left corner of every assignment, provide the following information in the format shown below.
+
+\noindent
+\rule[1mm]{\linewidth}{0.5pt}
+\begin{tabular}{ll}
+\textbf{Name:} & \texttt{Full Name} \\
+\textbf{NetID:} & \texttt{TAMU NetID} \\
+\textbf{UIN:} & \texttt{TAMU UIN}
+\end{tabular}
+
+
+\paragraph{Assignment and Section Numbers:}
+Clearly identify the assignment number and the course section at the top of every solution set.
+\begin{center}
+\begin{Large}
+\textbf{Assignment 1 -- ECEN 303-502}
+\end{Large}
+\end{center}
+
+
+\paragraph{Problem Differentiation:}
+To distinguish the work associated with each problem, clearly outline the beginning of every question with a number and a colored line in the following manner.
+
+\noindent
+\textcolor{red}{\rule[1mm]{\linewidth}{1pt}}
+\begin{Large}
+\textcolor{red}{\textbf{1.}}
+\end{Large}
+
+
+\paragraph{Solution Highlight:}
+When a question leads to a succinct answer, for example a number, highlight the answer in a colored box.
+
+\noindent
+\adjustbox{cframe=red 1pt 8pt 8pt}{\Large $e^{j \pi} + 1 = 0$}
+
+
+\paragraph{Template:}
+You will find a solution template below.
+
+
+\newpage
+
+
+\noindent
+\begin{tabular}{ll}
+\textbf{Name:} & \texttt{Jean-Francois Chamberland} \\
+\textbf{NetID:} & \texttt{chmbrlnd} \\
+\textbf{UIN:} & \texttt{271828182}
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{center}
+\begin{Large}
+\textbf{Assignment 1 -- ECEN 303-502}
+\end{Large}
+\end{center}
+
+\vspace{5mm}
+
+\noindent
+\textcolor{red}{\rule[1mm]{\linewidth}{1pt}}
+\begin{Large}
+\textcolor{red}{\textbf{1.}}
+\end{Large}
+What is the probability of getting four kings in a poker hand?
+
+\vspace{5mm}
+
+There are $\binom{52}{5}$ ways to get a 5-card poker hand.
+All these poker hands are equally likely when a deck is well shuffled.
+Out of these possible outcomes, there are $12$ hands with four kings.
+As such, the probability of getting four kings in a poker hand is
+\begin{equation*}
+\frac{48}{\binom{52}{5}}
+= \frac{48 \cdot 47! \cdot 5!}{52!}
+= \frac{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{52 \cdot 51 \cdot 50 \cdot 49}
+= \frac{1}{54 145} .
+\end{equation*}
+
+\noindent
+\adjustbox{cframe=red 1pt 8pt 8pt}{\Large $\frac{1}{54 145}$}
+
+
+\end{document}
+
