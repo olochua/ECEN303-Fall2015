@@ -1,6 +1,6 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Ben Johnston"
+__NetID__ = "benj626"
+__GitHubID__ = "benj626"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
@@ -28,6 +28,10 @@ def biasedcoinflip(p=0.5):
     # EDIT
     # Create method for biased coin flip
     #
+    if random.random() < p:
+        return 1
+    else:
+        return 0
 
 
 for TrialIndex1 in range(0, NumberTrials):
