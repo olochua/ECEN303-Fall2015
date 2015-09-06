@@ -1,22 +1,18 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = 'benjamin'
 
 import random
 
-Cardinality = 2
-NumberTrials = 1000
+Cardinality = 4  #Noticed that this could be the denominator
+NumberTrials = 1 #Setting this to one give an equal chance to select 1/(cardinality)
 
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):
     TrialSequence.append(random.randrange(Cardinality))
-    #
-    # EDIT
-    # Modify code to produce biased binary coin flip that returns one with probability 0.75
-    # and zero otherwise
-    #
 
 EmpiricalDistribution = []
-for OutcomeIndex in range(0, Cardinality):
+for OutcomeIndex in range(0,Cardinality):
     EmpiricalDistribution.append(TrialSequence.count(OutcomeIndex) / float(NumberTrials))
-print EmpiricalDistribution
+print(EmpiricalDistribution)
+#New (Adds the sections 1,2, and 3 to achieve a 3/4 or .75 chance of being "1"
+EmpiricalDistribution.append(EmpiricalDistribution[0] + EmpiricalDistribution[1] + EmpiricalDistribution[2])
+print(EmpiricalDistribution[4])
