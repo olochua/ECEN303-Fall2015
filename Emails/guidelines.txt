@@ -1,0 +1,8 @@
+Hello,
+
+You will find attached to this message a set of guidelines for solutions to assignments. Please, read through this documents, and follow the guidelines when creating solutions. This PDF document is also available on the class GitHub repository under Miscellaneous.
+
+Best regards,
+Jean-Francois Chamberland
+
+PS: Several students had questions about homework solutions. These guidelines should answer all the questions I have received so far.
