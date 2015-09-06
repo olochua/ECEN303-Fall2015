@@ -1,11 +1,18 @@
-__author__ = ""
-__NetID__ = ""
+__author__ = "Seungwon Yoon"
+__NetID__ = "ysw0927"
 __GitHubID__ = ""
 
 import random
 
 Cardinality = 2
 NumberTrials = 1000
+
+def coinflip(p=0.75):
+    if random.random() < p:
+        return 1
+    else:
+        return 0;
+
 
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):

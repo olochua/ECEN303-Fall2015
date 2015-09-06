@@ -4,7 +4,7 @@
 ## Students
 
 * _Full Name_, _TAMU NetID_, _GitHubID_
-* George Anthony, gka243
+* George Anthony, gka243, [gka243](https://github.com/gka243/)
 * Allison Badgett, allisonbadgett, [allisonbadgett](https://github.com/allisonbadgett/)
 * Liliana Balboa, lbalboa100
 * Bailey Barksdale, bailey13, [bkb0917](https://github.com/bkb0917/)
@@ -62,7 +62,7 @@
 * Jesse Yancy, jpy234, [jesseyancy23](https://github.com/jesseyancy23)
 * Seungwon Yoon, ysw0927, [buttonsense](https://github.com/buttonsense/)
 * Wenkui Ren, ren0587, [wenku9332](https://github.com/wenku9332/)
-
+* David Fawcett, dfawcett [dfawcett](https://github.com/dfawcett)
 
 ## Teaching Assistant
 
