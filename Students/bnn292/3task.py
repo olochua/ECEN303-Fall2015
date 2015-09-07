@@ -1,6 +1,6 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Bijan Nekovei"
+__NetID__ = "bnn292"
+__GitHubID__ = "bnn292"
 
 import random
 
