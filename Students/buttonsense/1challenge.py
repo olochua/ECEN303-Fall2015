@@ -4,7 +4,7 @@ __GitHubID__ = "buttonsense"
 __challenge__ = "1"
 __version__ = "3.4"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 """
@@ -39,24 +39,25 @@ print('The average number of ones is {0:.4f}.'.format(TrialAverage))
 
 SumTrials = []
 
-SumTrials = (list(sum(Trials[x:x+NumberFlips]) for x in range(0,len(Trials), NumberFlips)))
 #sums NumberFlips outcomes from list Trials and appends the result to list Sumtrials
-#I had no idea how to do this using your for loops
+SumTrials = (list(sum(Trials[x:x+NumberFlips]) for x in range(0,len(Trials), NumberFlips)))
 
+#count the values in Sumtrials and insert into list Distribution
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 
-print(repr(Distribution))
+print(repr(Distribution)) #print the list Distribution
 print(sum(Distribution)) #print the sum of elements in Distribution
 
+#setup the values
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
 bar_width = 0.8
 XticksIndex = [(outcome + (0.5 * bar_width)) for outcome in OutcomeIndex2]
 opacity = 0.4
-
+#plotting
 plt.bar(OutcomeIndex2, Distribution, bar_width, alpha=opacity, color='b')
 plt.xlabel("Value")
 plt.ylabel("Probability")
