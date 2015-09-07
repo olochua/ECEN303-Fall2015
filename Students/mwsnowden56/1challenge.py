@@ -75,7 +75,7 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+As ParameterP varies from zero to one, the probability that a zero is returned increases.
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 
