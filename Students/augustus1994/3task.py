@@ -9,7 +9,6 @@ NumberTrials = 1000
 
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):
-     TrialSequence.append(random.randrange(Cardinality))
     if random.random() <= .75:
         TrialSequence.append(1)
     else:
