@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Jesse Yancy"
+__NetID__ = "jpy234"
+__GitHubID__ = "jesseyancy23"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "3"
 __PeerGrade__ = ""
 
 """
@@ -25,9 +25,11 @@ Trials = []
 
 
 def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
+
+        if random.random() < p:
+            return 1
+        else:
+            return 0
 
 
 for TrialIndex1 in range(0, NumberTrials):
@@ -66,7 +68,8 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+With p being one you will only get ones, as P goes down to zero you will get less and less 1s while getting
+more and more 0s
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 
