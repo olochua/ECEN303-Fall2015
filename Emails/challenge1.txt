@@ -1,0 +1,9 @@
+Hello,
+
+You will find below a link to Programming Challenge 1. As part of this exercise, you are asked to program coin flips. Programming Challenge 1 is due on: Tuesday, September 15, online. As usual, you are encouraged to work in groups, yet you need to submit your own python code.
+
+Regards,
+Jean-Francois Chamberland
+
+https://github.com/CourseReps/ECEN303-Fall2015/blob/master/Challenges/1challenge.md
+
