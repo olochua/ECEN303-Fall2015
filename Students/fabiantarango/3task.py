@@ -1,20 +1,21 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Eloi Fabian Tarango"
+__NetID__ = "fabian.tarango"
+__GitHubID__ = "fabiantarango"
 
 import random
 
-Cardinality = 2
+Cardinality = 2         #number of elements in the set
 NumberTrials = 1000
 
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):
     TrialSequence.append(random.randrange(Cardinality))
-    #
-    # EDIT
-    # Modify code to produce biased binary coin flip that returns one with probability 0.75
-    # and zero otherwise
-    #
+  
+if random.random() <= .75:
+      TrialSequence.append(1)           #Probability of outcome of 1.
+      
+else: TrialSequence.append(0)           #Probability of outcome of 0 is .25.
+    
 
 EmpiricalDistribution = []
 for OutcomeIndex in range(0, Cardinality):
