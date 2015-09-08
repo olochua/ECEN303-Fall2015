@@ -1,6 +1,6 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Jesse Yancy"
+__NetID__ = "jpy234"
+__GitHubID__ = "jesseyancy23"
 
 import random
 
@@ -10,11 +10,14 @@ NumberTrials = 1000
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):
     TrialSequence.append(random.randrange(Cardinality))
-    #
-    # EDIT
-    # Modify code to produce biased binary coin flip that returns one with probability 0.75
-    # and zero otherwise
-    #
+   
+   def biasedcoinflip(p=0.75):
+    
+
+        if random.random() < p:
+            return 1
+        else:
+            return 0
 
 EmpiricalDistribution = []
 for OutcomeIndex in range(0, Cardinality):
