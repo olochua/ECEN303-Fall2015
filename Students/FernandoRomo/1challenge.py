@@ -2,7 +2,7 @@ __author__ = "Fernando Romo"
 __NetID__ = "jfernandoromoddl"
 __GitHubID__ = "FernandoRomo"
 __challenge__ = "1"
-__version__ = "0.1"
+__version__ = "0.2"
 __grader__ = ""
 __SelfGrade__ = ""
 __PeerGrade__ = ""
@@ -27,8 +27,12 @@ Trials = []
 def biasedcoinflip(p=0.5):
     # EDIT
     # Create method for biased coin flip
-    #
+    
+    if random.random() <= 0.5:
+        Trials.append(1) #Probability of Heads 0.5, Heads = 1 (True)
 
+    else:
+        Trials.append(0) #Probability of Tails 0.5, Tails = 0 (False)
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
