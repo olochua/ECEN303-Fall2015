@@ -1,3 +1,3 @@
-Name: Ruben Rodriguez 
-GitHubID: ruben2210
-NetID: ruben2210
+* Name: Ruben Rodriguez 
+* GitHubID: ruben2210
+* NetID: ruben2210
