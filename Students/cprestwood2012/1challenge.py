@@ -3,9 +3,9 @@ author__ = "Colbie Prestwood"
 __NetID__ = "cprestwood2012"
 __GitHubID__ = "cprestwood2012"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "3.4"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -44,9 +44,9 @@ print('The average number of ones is {0:.4f}.'.format(TrialAverage))
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
+    
     # Add NumberFlips coin flips for each SumTrials outcome
-    Temp = 0
+    Temp = 0  #this represents a temporary sum to perform the neccesary functions
     for InnerIndex in range(0, NumberFlips):
         Temp += biasedcoinflip(ParameterP)
     SumTrials.append(Temp)
@@ -56,10 +56,9 @@ Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
-# EDIT
 # Print the sum of the elements in Distribution
 print(repr(Distribution))
-SumDistribution = 0
+SumDistribution = 0  #this term allows for allocated space to print.
 for item in Distribution:
     SumDistribution += item
 print(repr(SumDistribution))
@@ -79,6 +78,10 @@ plt.show()
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
 
-
+A shift in the graph from left to right will occur as the value increases from zero to one. At zero the graph will show no rise in the bar and then at one a rise in the bar will occur and then simiar occurences shall happen as the ParameterP value increases.
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
+
+At ParameterP  equal to 0.7 and NumberFlips equal to 8, the outcome should come out to 6 with a probability of roughly
+30%.
+
 """
