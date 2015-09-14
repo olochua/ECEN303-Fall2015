@@ -1,3 +1,4 @@
+__author__ = 'Colbie'
 author__ = "Colbie Prestwood"
 __NetID__ = "cprestwood2012"
 __GitHubID__ = "cprestwood2012"
@@ -27,30 +28,41 @@ Trials = []
 def biasedcoinflip(p=0.5):
     # EDIT
     # Create method for biased coin flip
-    #
+
+    if random.random() <= p:
+        return 1  # 1 meaning the statement is true
+    else:
+        return 0  # 0 nmeaning the statement is  false
 
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
 
 TrialAverage = sum(Trials) / (1.0 * len(Trials))
-print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
+print('The average number of ones is {0:.4f}.'.format(TrialAverage))
 
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
     # EDIT
     # Add NumberFlips coin flips for each SumTrials outcome
-    #
+    Temp = 0
+    for InnerIndex in range(0, NumberFlips):
+        Temp += biasedcoinflip(ParameterP)
+    SumTrials.append(Temp)
+
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
-print repr(Distribution)
 # EDIT
 # Print the sum of the elements in Distribution
-#
+print(repr(Distribution))
+SumDistribution = 0
+for item in Distribution:
+    SumDistribution += item
+print(repr(SumDistribution))
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -69,6 +81,4 @@ Describe what happens to the figure as you vary ParameterP from zero to one.
 
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-
-
 """
