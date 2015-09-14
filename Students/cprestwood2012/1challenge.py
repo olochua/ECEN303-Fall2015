@@ -78,7 +78,11 @@ plt.show()
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
 
-A shift in the graph from left to right will occur as the value increases from zero to one. At zero the graph will show no rise in the bar and then at one a rise in the bar will occur and then simiar occurences shall happen as the ParameterP value increases.
+A shift in the graph from left to right will occur as the value increases from zero to one. At zero the graph will 
+show a rise in the bar NumberFlips value of 1 and then as the ParameterP value increases towards one there will be 
+a more even distrubution across the graph with the breakeven point being at the value of .5 When it reaches one the 
+bar over the NumberFlips value of 8.
+
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 
 At ParameterP  equal to 0.7 and NumberFlips equal to 8, the outcome should come out to 6 with a probability of roughly
