@@ -1,6 +1,6 @@
 __author__ = "David Fawcett"
 __NetID__ = "dgf378"
-__GitHubID__ = ""
+__GitHubID__ = "dfawcett"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
