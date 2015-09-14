@@ -2,7 +2,7 @@ __author__ = "Madeline Kinnaird"
 __NetID__ = "mrk13"
 __GitHubID__ = "mkinnaird16"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "1.2"
 __grader__ = ""
 __SelfGrade__ = ""
 __PeerGrade__ = ""
@@ -25,10 +25,10 @@ Trials = []
 
 
 def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
-
+    if random.randon() < p:
+        return 1
+    else:
+        return 0
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
@@ -39,18 +39,21 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
+    flip_sum = 0 #begin with zero as no coins have been flipped
+    for index in range (0, NumberFlips): #the range of the number of flips
+        flip_sum = += biasedcoinflip(ParameterP)
+    SumTrials.append(flip_sum) #this adds flip_sum to SumTrails
+        
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+distribution_sum = 0 #set distribution sum to 0
+for item in Distribution:
+    distribution_sum = += item
+print(repr(distribution_sum))
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
