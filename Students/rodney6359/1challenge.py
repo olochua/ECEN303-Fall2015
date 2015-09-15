@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Rodney Siders"
+__NetID__ = "rodney6359"
+__GitHubID__ = "rodney6359"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "1.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -23,12 +23,13 @@ NumberFlips = 8
 NumberTrials = 100000
 Trials = []
 
-
-def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
-
+#Makes sure we have a mixed up coin to prevent puesdo random
+def biasedcoinflip(prob=0.5):
+   for g in range(0,1000):
+    if (random.random() >= prob):
+        return 1
+    else:
+        return 0
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
@@ -38,19 +39,22 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 
 SumTrials = []
 
+# So this works to make the results of the baisedcoinflip set to a variable(junk)
+# and from there sums it up and place it in SumTrials
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
+
+    junk = 0
+    for flips in range(0, NumberFlips):
+        junk += biasedcoinflip(ParameterP)
+        SumTrials.append(junk)
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
 # Print the sum of the elements in Distribution
-#
+print (sum(Distribution))
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -69,6 +73,5 @@ Describe what happens to the figure as you vary ParameterP from zero to one.
 
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-
-
+Given parameter, would be 6.
 """
