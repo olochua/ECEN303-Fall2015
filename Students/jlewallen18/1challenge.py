@@ -70,12 +70,12 @@ plt.show()
 """
 Describe What happens to the figure as you vary ParameterP from zero to one?
 As ParameterP is varied from zero to one, the distrubution probability shifts from left to right as it is becoming more likely that a one will be achieved.
-Upon observation, when ParameterP is equal to zero, which makes logical sense, since there is no chance at obtaining a value of 1.
+Upon observation, when ParameterP is equal to zero the probability equals zero, which makes logical sense, since there is no chance at obtaining a value of 1.
 Then as ParameterP increases, so does the probability of the other values occuring. As the ParameterP grows closer to 1.0, the graph shifts to higher values while 
-lower values are displayed less. Finally at ParameterP = 1, the bar is completely in 8, simply because all coin flips were a 1.
+lower values are displayed less. Finally at ParameterP = 1, the bar is completely in slot 8, simply because all coin flips were a 1.
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 
-The most likely value is a 6 with probability percentage of 0.255 or 26%
+The most likely value is a 6 with probability of 0.255 or 26%
 
 """ 
