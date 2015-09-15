@@ -18,7 +18,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.3
+ParameterP = 0.7
 NumberFlips = 8
 NumberTrials = 100000
 Trials = []
@@ -52,10 +52,10 @@ for OutcomeIndex1 in range(0, NumberFlips + 1):
 
 print repr(Distribution)
 
-Dist = 0
-for item in Distribution:
-    Dist += item
-print(repr(Dist))
+dist = 0
+for item in range(0, len(Distribution)):
+    dist += Distribution[item]
+print "The Sum of the Distribution is " + str(dist)
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -68,6 +68,7 @@ plt.xlabel("Value")
 plt.ylabel("Probability")
 plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
+
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
