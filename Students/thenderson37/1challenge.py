@@ -27,9 +27,9 @@ Trials = []
 def biasedcoinflip(p=0.5):
     """"Flips a coin using a random number generator"""
     if random.random() <= p:
-        Trials.append(1)
+        return 1
     else:
-        Trials.append(0)
+        return 0
 
 
 for TrialIndex1 in range(0, NumberTrials):
