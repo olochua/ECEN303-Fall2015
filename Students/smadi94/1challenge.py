@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Zachary Smadi"
+__NetID__ = "smadi94"
+__GitHubID__ = "smadi94"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "3"
 __PeerGrade__ = ""
 
 """
@@ -25,10 +25,11 @@ Trials = []
 
 
 def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
 
+    if random.random() < p:
+        return 1  #if the coin is heads
+    else:
+        return 0  #if the coin is tails
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
@@ -43,6 +44,12 @@ for TrialIndex2 in range(0, NumberTrials):
     # Add NumberFlips coin flips for each SumTrials outcome
     #
 
+    addFlips= 0  #no flips yet, temporary sum
+    for InnerIndex in range(0, NumberFlips): #NumberFlips is set to 8, so 0 to 8 flips
+        addFlips += biasedcoinflip(ParameterP)
+    SumTrials.append(addFlips)  #each SumTrials add addFlips
+
+
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
@@ -51,6 +58,10 @@ print repr(Distribution)
 # EDIT
 # Print the sum of the elements in Distribution
 #
+sumDistribution = 0
+for item in Distribution:
+    sumDistribution += item
+print(repr(sumDistribution))
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -66,9 +77,12 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
+As ParameterP increases from zero to one the graph shifts from left to right. This is because the more the coin is flipped
+the higher the probablility of it being a one.
 
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
+If ParameterP = 0.7 and NumberFlips = 8, then the most likely outcome is 6. It has about a 30% probability.
 
 
 """
