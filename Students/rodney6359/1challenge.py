@@ -70,8 +70,9 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+With ParameterP increasing from 0 to 1 the figure shifts to the right,
+ with the center of the distribution moving across the x-axis 
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-Given parameter, would be 6.
+Given the parameter, it would be 6.
 """
