@@ -4,7 +4,7 @@ __GitHubID__ = "smadi94"
 __challenge__ = "1"
 __version__ = "3.1"
 __grader__ = ""
-__SelfGrade__ = "3"
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
