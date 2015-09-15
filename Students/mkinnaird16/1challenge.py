@@ -2,9 +2,9 @@ __author__ = "Madeline Kinnaird"
 __NetID__ = "mrk13"
 __GitHubID__ = "mkinnaird16"
 __challenge__ = "1"
-__version__ = "1.2"
+__version__ = "1.4"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -69,9 +69,9 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+The figure shows the probability of getting consective flips in a row. As the value on the x axis increases the probability of getting more flips in a row becomes less likely. Varyinig ParameterP is between 1 and 8 flips in a row.
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-
+6 flips in a row is the most likely outcome.
 
 """
