@@ -15,7 +15,7 @@ Maximum Grade: 5pt
 
 import random
 import math
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 ParameterP = 0.3
@@ -59,7 +59,7 @@ for OutcomeIndex3 in range(0, NumberFlips+1):
     DistSum += Distribution[OutcomeIndex3]
 print(DistSum)
 
-"""
+
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
 bar_width = 0.8
@@ -71,7 +71,7 @@ plt.xlabel("Value")
 plt.ylabel("Probability")
 plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
-"""
+
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
 
