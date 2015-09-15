@@ -4,7 +4,7 @@ __GitHubID__ = "jesseyancy23"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = "3"
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -41,18 +41,22 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
+
+    sum_of_flips = 0
+    for Index in range (0, NumberFlips):
+        sum_of_flips += biasedcoinflip(ParameterP)
+    SumTrials.append(sum_of_flips)
+
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+dist_sum = 0
+for element in Distribution:
+    dist_sum += element
+print(repr(dist_sum))
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
