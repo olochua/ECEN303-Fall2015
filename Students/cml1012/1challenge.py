@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Chu Liang"
+__NetID__ = "cml1012"
+__GitHubID__ = "cml1012"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "3.4"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 """
@@ -18,7 +18,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.3
+ParameterP = 0.7
 NumberFlips = 8
 NumberTrials = 100000
 Trials = []
@@ -27,8 +27,10 @@ Trials = []
 def biasedcoinflip(p=0.5):
     # EDIT
     # Create method for biased coin flip
-    #
-
+    if random.random() < p:
+        return 1
+    else:
+        return 0
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
@@ -41,16 +43,22 @@ SumTrials = []
 for TrialIndex2 in range(0, NumberTrials):
     # EDIT
     # Add NumberFlips coin flips for each SumTrials outcome
-    #
+    CoinsFlip = 0
+    for index in range(0, NumberFlips) #starting from 0 flipping to total of 8
+        CoinsFlip += biasedcoinflip(ParameterP)
+    SumTrails.append(CoinsFlip)    
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+    # EDIT
+    # Print the sum of the elements in Distribution
+    Distribute = 0
+    for element in Distribution:
+        Distribute += element
+    Print(repr(Distribute))    
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -66,9 +74,10 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+As you vary ParameterP from zero to one, the graph of distribution probability will shift left to right.
+The closer it gets to one the more even the graph will become.
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-
+Most likely outcome will be 6 with a probablity around 30%.
 
 """
