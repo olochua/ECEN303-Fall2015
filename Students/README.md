@@ -63,6 +63,7 @@
 * Seungwon Yoon, ysw0927, [buttonsense](https://github.com/buttonsense/)
 * Wenkui Ren, ren0587, [wenku9332](https://github.com/wenku9332/)
 * David Fawcett, dfawcett [dfawcett](https://github.com/dfawcett)
+* Ruben Rodriguez, ruben2210, [ruben2210] (https://github.com/ruben2210)
 
 ## Teaching Assistant
 
