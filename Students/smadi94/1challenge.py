@@ -2,7 +2,7 @@ __author__ = "Zachary Smadi"
 __NetID__ = "smadi94"
 __GitHubID__ = "smadi94"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "3.1"
 __grader__ = ""
 __SelfGrade__ = "3"
 __PeerGrade__ = ""
@@ -40,9 +40,6 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
 
     addFlips= 0  #no flips yet, temporary sum
     for InnerIndex in range(0, NumberFlips): #NumberFlips is set to 8, so 0 to 8 flips
@@ -55,9 +52,7 @@ for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+
 sumDistribution = 0
 for item in Distribution:
     sumDistribution += item
