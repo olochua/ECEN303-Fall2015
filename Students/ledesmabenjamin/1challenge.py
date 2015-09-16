@@ -18,57 +18,38 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.3
-NumberFlips = 8
-NumberTrials = 100000
-Trials = []
+__author__ = 'benjamin'
 
+import random
 
-def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
+def biasedcoinflip(p=0.7):
+    Record = []
+    Cardinality = 1000
+    S = 1
+    k = 0
+    q = int(p*1000)
+    NumberTrials = 8
 
+    for TrialIndex in range(0,NumberTrials):
+        j = 0
+        TrialSequence = []
+        TrialSequence.append(random.randrange(Cardinality))
 
-for TrialIndex1 in range(0, NumberTrials):
-    Trials.append(biasedcoinflip(ParameterP))
+        EmpiricalDistribution = []
+        for OutcomeIndex in range(0, Cardinality):
+            EmpiricalDistribution.append(TrialSequence.count(OutcomeIndex) / float(S))
 
-TrialAverage = sum(Trials) / (1.0 * len(Trials))
-print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
+        for OutcomeIndex in range(0, q):
+            j += EmpiricalDistribution[OutcomeIndex]
+            k += EmpiricalDistribution[OutcomeIndex]
+        Record.append(j)
 
-SumTrials = []
+    print(Record)
+    print('number of 1\'s: '), print(k)
+    print('number of 0\'s: '), print(NumberTrials-k)
 
-for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
+biasedcoinflip()
 
-Distribution = []
-for OutcomeIndex1 in range(0, NumberFlips + 1):
-    Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
+## 1.) As the parameter "p" is changed from 0-1, the probability that the coin will land on heads ("1") increases from a 0% to a 100% chance respectively.
 
-print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
-
-OutcomeIndex2 = range(0, NumberFlips + 1)
-num_bins = len(OutcomeIndex2)
-bar_width = 0.8
-XticksIndex = [(outcome + (0.5 * bar_width)) for outcome in OutcomeIndex2]
-opacity = 0.4
-
-plt.bar(OutcomeIndex2, Distribution, bar_width, alpha=opacity, color='b')
-plt.xlabel("Value")
-plt.ylabel("Probability")
-plt.xticks(XticksIndex, OutcomeIndex2)
-plt.show()
-
-"""
-Describe what happens to the figure as you vary ParameterP from zero to one.
-
-
-What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-
-
-"""
+## 2.) The most likely outcome will be 5xheads and 3xtails.
