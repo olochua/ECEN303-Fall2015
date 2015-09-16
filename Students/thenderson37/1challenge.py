@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Tyler Henderson"
+__NetID__ = "tyler.henderson07"
+__GitHubID__ = "thenderson37"
 __challenge__ = "1"
-__version__ = "0.0"
+__version__ = "3.4"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -18,38 +18,43 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.3
+ParameterP = 0.7
 NumberFlips = 8
 NumberTrials = 100000
 Trials = []
 
 
 def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
+    """"Flips a coin using a random number generator"""
+    if random.random() <= p:
+        return 1
+    else:
+        return 0
 
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
 
 TrialAverage = sum(Trials) / (1.0 * len(Trials))
-print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
+print( 'The average number of ones is {0:.4f}.'.format(TrialAverage))
 
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
+   temp = 0 
+   
+    for TrialIndex2 in range(0, NumberFlips):
+        temp = temp + biasedcoinflip(ParameterP)
+        
+    SumTrials.append(temp)
     # Add NumberFlips coin flips for each SumTrials outcome
-    #
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
-print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
+print( repr(Distribution))
+print( sum(Distribution)) #Print the sum of the elements in Distribution
 #
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
@@ -66,9 +71,10 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+The peak of the distribution moves from left to right as the parameter is adjusted from zero to one.
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
+The most likely outcome it 6 with probability of 0.3.
 
 
 """

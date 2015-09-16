@@ -85,6 +85,6 @@ The distribution shifts left when ParameterP moves towards zero and the
 distribution shifts right when ParameterP moves towards 
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
-6 heads out of 8 flips. 
+6 heads out of 8 flips. The probability this will occur is about .3.
 
 """
