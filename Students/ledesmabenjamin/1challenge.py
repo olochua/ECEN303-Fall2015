@@ -1,6 +1,6 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = 'Ben Ledesma'
+__NetID__ = "622006622"
+__GitHubID__ = "ledesma.benjamin"
 __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
@@ -17,8 +17,6 @@ import random
 import math
 import matplotlib.pyplot as plt
 
-
-__author__ = 'benjamin'
 
 import random
 
