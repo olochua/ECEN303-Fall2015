@@ -18,7 +18,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.3
+ParameterP = 0.7
 NumberFlips = 8
 NumberTrials = 100000
 
@@ -26,11 +26,11 @@ Trials = []
 def biasedcoinflip(p=0.5):
     # EDIT 1
     # Create method for biased coin flip
-    if random.random() <= 0.5:
-        Trials.append(1) #Probability of Heads 0.5, Heads = 1 (True)
+    if random.random()<p:
+        return 1 #Probability of Heads 0.5, Heads = 1 (True)
 
     else:
-        Trials.append(0) #Probability of Tails 0.5, Tails = 0 (False)
+        return 0 #Probability of Tails 0.5, Tails = 0 (False)
 
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(biasedcoinflip(ParameterP))
@@ -40,14 +40,15 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 
 SumTrials = []
 
+HeadsSum = 0 #Initialize the sum of Heads to zero. ( Heads: value is equal to 1)
 for TrialIndex2 in range(0, NumberTrials):
     # EDIT 2
     # Add NumberFlips coin flips for each SumTrials outcome
-    HeadsSum = 0 #Sum of Heads since the value is equal to 1.
-    for index in range(0, HeadsSum + 1): #Range to sum all the coin flips
-        HeadsSum += biasedcoinflip(ParameterP) #Sum of all the actual flips
+    for index in range(0, NumberFlips): #Range to sum all the coin flips
+        HeadsSum = HeadsSum + biasedcoinflip(ParameterP) #Sum of all the actual flips
 
     SumTrials.append(HeadsSum) #Return the answer of the sum
+    HeadsSum = 0 #Restore the Counter of Heads to zero.
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
@@ -72,7 +73,9 @@ plt.show()
 
 """
 Describe what happens to the figure as you vary ParameterP from zero to one.
-
+>> When you increase the ParameterP from zero to one, the Probability Distribtuion moves
+from the left to the right. Therefore, the Number of Flips to get a (Head = 1) increases
+as the ParameterP increases in the interval (0,1).
 
 What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 >>The most likely outcome for the given parameters is 6 with a Probability of about 30%.
