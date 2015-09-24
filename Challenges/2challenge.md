@@ -31,7 +31,7 @@ Address the following two problems.
 
 
 For the part below, consider the following scenario.
-One experiment consists in repeatitively flipping binary coin `A` with `ParameterA = 1/2` and binary coint `B` with `ParamterB = 1/3` until one of the two coins is one and the other one is zero.
+One experiment consists in repetitively flipping binary coin `A` with `ParameterA = 1/2` and binary coint `B` with `ParamterB = 1/3` until one of the two coins is one and the other one is zero.
 The outcome of this experiment is the again the total number of coin tosses until the stopping condition is reached.
 
 Address the following two problems.
