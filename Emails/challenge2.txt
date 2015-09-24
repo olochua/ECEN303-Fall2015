@@ -1,0 +1,8 @@
+Hello,
+
+You will find below a link to Programming Challenge 2. As part of this exercise, you are asked to program geometric coin flips. Programming Challenge 2 is due on: Tuesday, October 6, online. A template named 2challenge.py has been placed in your personal folder. Edit this template and address the 5 problems. You are encouraged to work in groups, yet you need to submit your own python code.
+
+Regards,
+Jean-Francois Chamberland
+
+https://github.com/CourseReps/ECEN303-Fall2015/blob/master/Challenges/2challenge.md
