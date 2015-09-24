@@ -4,7 +4,7 @@ __GitHubID__ = "derekheidtke"
 __challenge__ = "1"
 __version__ = "1.0"
 __grader__ = ""
-__SelfGrade__ = "4.9"
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 """

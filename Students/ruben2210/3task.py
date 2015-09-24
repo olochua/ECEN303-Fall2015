@@ -1,6 +1,6 @@
-__author__ = "Chu Liang"
-__NetID__ = "Cml1012"
-__GitHubID__ = "Cml1012"
+__author__ = "Ruben Rodriguez"
+__NetID__ = "ruben2210"
+__GitHubID__ = "ruben2210"
 
 import random
 
@@ -9,10 +9,10 @@ NumberTrials = 1000
 
 TrialSequence = []
 for TrialIndex in range(0, NumberTrials):
-    if random.random() <= 0.75:
-        TrialSequence.append(1)
-    else:
-        TrailSequence.append(0)
+    TrialSequence.append(random.randrange(Cardinality))
+    #
+    # EDIT
+    #
 
 EmpiricalDistribution = []
 for OutcomeIndex in range(0, Cardinality):
