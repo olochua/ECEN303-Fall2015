@@ -17,5 +17,6 @@ Pay special attention to uppercase and lowercase letters; the grading scripts ma
 
 ## Progression of Challenges
 
-1. [Flipping Coins](./1challenge.md)
+1. [Coin Flips](./1challenge.md)
+2. [Geometric Coin Flips](./2challenge.md)
 
