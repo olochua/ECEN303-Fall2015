@@ -25,9 +25,10 @@ Trials = []
 
 
 def biasedcoinflip(p=0.5):
-    # EDIT
-    # Create method for biased coin flip
-    #
+    if random.random() <= p:
+        return 1
+    else:
+        return 0
 
 
 for TrialIndex1 in range(0, NumberTrials):
@@ -39,18 +40,17 @@ print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
 SumTrials = []
 
 for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
-    #
+    NumberHeads = 0
 
 Distribution = []
 for OutcomeIndex1 in range(0, NumberFlips + 1):
     Distribution.append(SumTrials.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+Sum = 0
+for OutcomeIndex3 in range(0, NumberFlips + 1):
+    Sum += Distribution[OutcomeIndex3]
+print(Sum)
 
 OutcomeIndex2 = range(0, NumberFlips + 1)
 num_bins = len(OutcomeIndex2)
@@ -72,3 +72,4 @@ What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
 
 
 """
+
