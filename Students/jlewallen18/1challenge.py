@@ -3,9 +3,9 @@ __NetID__ = "jlewallen18"
 __GitHubID__ = "jlewallen18"
 __challenge__ = "1"
 __version__ = "1.0"
-__grader__ = ""
+__grader__ = "Caleb Holley"
 __SelfGrade__ = "5"
-__PeerGrade__ = ""
+__PeerGrade__ = "5"
 
 """
 Random Signals and Systems
