@@ -3,9 +3,9 @@ __NetID__ = "ysw0927"
 __GitHubID__ = "buttonsense"
 __challenge__ = "1"
 __version__ = "3.4"
-__grader__ = ""
+__grader__ = "Craig Wolf"
 __SelfGrade__ = "5"
-__PeerGrade__ = ""
+__PeerGrade__ = "4"
 
 """
 Random Signals and Systems
