@@ -3,7 +3,7 @@ __NetID__ = "jpy234"
 __GitHubID__ = "jesseyancy23"
 __challenge__ = "1"
 __version__ = "0.0"
-__grader__ = "FernandoRomo"
+__grader__ = "Tyler Henderson"
 __SelfGrade__ = "4"
 __PeerGrade__ = "3"
 
