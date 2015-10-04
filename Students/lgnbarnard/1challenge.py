@@ -5,7 +5,7 @@ __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
 __SelfGrade__ = "4"
-__PeerGrade__ = ""
+__PeerGrade__ = "4" #Reason: should be "in Distribution" not "in range" i believe, that would fix your issue on line 59.
 
 """
 Random Signals and Systems
