@@ -25,6 +25,14 @@ NumberTrials = 100000
 
 
 def biasedcoinflip(p=0.5):
+    for TrialIndex in range(0, NumberTrials):
+        TrialSequence.append(random.randrange(2)))
+        if (sum(TrialSequence)/ (1.0 *len(TrialSequence))) < ParameterP:
+            TrialSequence[len(TrialSequence-1]=1
+            return 1
+        else:
+            TrialSequence[len(TrialSequence)-1]=0
+            return 0
     """
     This method returns a one with probability p and it returns a zero with
     probability (1 - p). The default parameter is p=0.5; this can be changed
