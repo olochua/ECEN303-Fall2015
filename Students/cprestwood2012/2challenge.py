@@ -22,17 +22,12 @@ ParameterP = 1.0/3.0    # Parameter of digital coin
 ParameterA = 1.0/3.0    # Parameter of digital coin A
 ParameterB = 1.0/2.0    # Parameter of digital coin B
 NumberTrials = 100000
+Trial1      = 4
+Trial2      = 2
 
 
 def biasedcoinflip(p=0.5):
-    for TrialIndex in range(0, NumberTrials):
-        TrialSequence.append(random.randrange(2)))
-        if (sum(TrialSequence)/ (1.0 *len(TrialSequence))) < ParameterP:
-            TrialSequence[len(TrialSequence-1]=1
-            return 1
-        else:
-            TrialSequence[len(TrialSequence)-1]=0
-            return 0
+ 
     """
     This method returns a one with probability p and it returns a zero with
     probability (1 - p). The default parameter is p=0.5; this can be changed
@@ -51,6 +46,21 @@ def geometricflip(p=0.5):
         numberflips += 1
     return numberflips
 
+def doubleflip(p1=0.5 , p2= 0.5):
+    numberflips = 1
+    count1 = 0
+    count2 = 0
+    
+    while (1):
+        coin1 = biasedcoinflip(p1)
+        coin2 = biasedcoinflip(p2)
+        if (coin1 == coin2):
+            numberflips += 1 s
+        else:
+                break
+    if(coin1):
+        count1 += 1
+        
 
 print "Part 1\n"
 
