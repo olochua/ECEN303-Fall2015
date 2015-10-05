@@ -3,9 +3,9 @@ __NetID__ = "622006622"
 __GitHubID__ = "ledesma.benjamin"
 __challenge__ = "1"
 __version__ = "0.0"
-__grader__ = ""
+__grader__ = "Morgan Frakes"
 __SelfGrade__ = ""
-__PeerGrade__ = ""
+__PeerGrade__ = "2.0"
 
 """
 Random Signals and Systems

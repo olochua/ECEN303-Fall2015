@@ -4,7 +4,7 @@ __GitHubID__ = "mgfrakes"
 __challenge__ = "1"
 __version__ = "1.0"
 __grader__ = ""
-__SelfGrade__ = "5pts"
+__SelfGrade__ = "3.0"
 __PeerGrade__ = ""
 
 """
@@ -18,7 +18,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = 0.7
+ParameterP = 0.3
 NumberFlips = 8
 NumberTrials = 100000
 Trials = []
