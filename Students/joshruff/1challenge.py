@@ -1,10 +1,11 @@
+##Written Using Python3
 __author__ = "Joshua Ruff"
 __NetID__ = "joshruff"
 __GitHubID__ = "joshruff"
 __challenge__ = "1"
 __version__ = "0.1"
 __grader__ = ""
-__SelfGrade__ = "4"
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 """
