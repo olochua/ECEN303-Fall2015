@@ -3,9 +3,9 @@ __NetID__ = "gka243"
 __GitHubID__ = "gka243"
 __challenge__ = "1"
 __version__ = "0.0"
-__grader__ = ""
+__grader__ = "iDuka"
 __SelfGrade__ = "0"
-__PeerGrade__ = ""
+__PeerGrade__ = "0"
 
 """
 Random Signals and Systems
