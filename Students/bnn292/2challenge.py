@@ -4,7 +4,7 @@ __GitHubID__ = "bnn292"
 __challenge__ = "2"
 __version__ = "2.7"
 __grader__ = ""
-__SelfGrade__ = "0"
+__SelfGrade__ = ""
 __PeerGrade__ = ""
 
 """

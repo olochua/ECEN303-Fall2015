@@ -5,7 +5,7 @@ __challenge__ = "1"
 __version__ = "1"
 __grader__ = ""
 __SelfGrade__ = "5"
-__PeerGrade__ = ""
+__PeerGrade__ = "5"
 
 """
 Random Signals and Systems

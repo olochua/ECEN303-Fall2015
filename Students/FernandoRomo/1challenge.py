@@ -5,7 +5,7 @@ __challenge__ = "1"
 __version__ = "Python 2.7"
 __grader__ = ""
 __SelfGrade__ = "4"
-__PeerGrade__ = ""
+__PeerGrade__ = "4"
 
 """
 Random Signals and Systems

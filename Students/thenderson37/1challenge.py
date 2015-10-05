@@ -3,9 +3,9 @@ __NetID__ = "tyler.henderson07"
 __GitHubID__ = "thenderson37"
 __challenge__ = "1"
 __version__ = "3.4"
-__grader__ = ""
+__grader__ = "Jui Yen Chua"
 __SelfGrade__ = "4"
-__PeerGrade__ = ""
+__PeerGrade__ = "4"
 
 """
 Random Signals and Systems
