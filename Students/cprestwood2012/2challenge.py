@@ -68,47 +68,49 @@ def doubleflip(p1=0.5 , p2= 0.5):
      
         
 
-print "Part 1\n"
+print ("Part 1\n")
 
 Trials = []
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(geometricflip(ParameterP))
-#
-# EDIT
-#
-
-print "The empirical probability that the  number of flips is 4 is " \
-    # EDIT: + repr(Solution1)) \
-    + "."
+    
+Sol1 = round(Trials.count(Part1)/float(EvenTrials),3)
 
 EvenTrials = 0
-for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+for TrialIndex1 in range (0, NumberTrials):
+      if(Trials[i]%2 == 0):
+         EvenTrials += 1
+       
+ Sol2 = round(Trials.count(Part1)/float(EvenTrials),3)
 
+print("The empirical probability that the  number of flips is 4 is") 
+print(repr(Sol1))
 print "The empirical probability that the number of flips is 4 conditional on number of flips being even is " \
-    # EDIT: + repr(Solution2)) \
-    + "."
+print(repr(Sol2))
 
 
-print "\nPart 2\n"
-
+print ("Part 2\n")
 Trials2 = []
 FinalA = 0
 FinalB = 0
 for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+	  results_i = doubleflip(ParameterA, ParameterB)		
+	  Trials2.append(results_i[0])
+	  FinalA += results_i[1]
+	  FinalB += results_i[2]
 
-print "The empirical probability that the number of flips is 2 is " \
-    # EDIT: + repr(Solution3)) \
-    + "."
-print "The empirical probability that coin A is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution4)) \
-    + "."
-print "The empirical probability that coin B is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution5)) \
-    + "."
+Sol3 = round(Trials2.count(Part2)/float(NumberTrials), 3)
+Sol4 = round(FinalA/float(NumberTrials),3)
+Sol5 = round(FinalB/float(NumberTrials),3)
+
+print ("Empirical probability that:")
+print("\n Number of flips is")
+print(repr(Part2))
+print(repr(Sol3))
+print ("Coin A is heads when the stopping condition is met:")
+print(repr(Sol4) )
+print("Coin B is heads when the stopping condition is met:")
+print(repr(Sol5))
+
+
 
