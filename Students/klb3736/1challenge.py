@@ -3,9 +3,9 @@ __NetID__ = "klb3736"
 __GitHubID__ = "klb3736"
 __challenge__ = "1"
 __version__ = "1.0"
-__grader__ = ""
+__grader__ = "Matthew Grogan"
 __SelfGrade__ = ""
-__PeerGrade__ = ""
+__PeerGrade__ = "3"
 
 """
 Random Signals and Systems
