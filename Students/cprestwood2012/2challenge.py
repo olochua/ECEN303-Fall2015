@@ -60,6 +60,12 @@ def doubleflip(p1=0.5 , p2= 0.5):
                 break
     if(coin1):
         count1 += 1
+    elif(coin2):
+         count2 += 1
+     else:
+       break
+     return (numberflips, count1, count2)
+     
         
 
 print "Part 1\n"
