@@ -1,0 +1,17 @@
+print 'The average number of ones is {0:.4f}.'.format(TrialAverage)
+ANSWER: The average number of ones is 0.3000.
+
+print repr(Distribution)
+ANSWER: [0.0577, 0.1976, 0.2966, 0.2541, 0.1361, 0.04664, 0.0100, 0.0012, 6.28e-05]
+
+print repr(sum(Distribution))
+ANSWER: 1.0
+
+Describe what happens to the figure as you vary ParameterP from zero to one.
+ANSWER: The probability weight shifts to the right.
+
+What is the most likely outcome for ParameterP = 0.7 and NumberFlips = 8?
+ANSWER: The most likely outcome is 6.
+
+If you sum all the elements of Distribution, what should you get?
+ANSWER: If you sum all the elements of Distribution, you should get 1.
