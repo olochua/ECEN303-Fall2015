@@ -3,9 +3,9 @@ __NetID__ = "bnn292"
 __GitHubID__ = "bnn292"
 __challenge__ = "1"
 __version__ = "Python 2.7"
-__grader__ = ""
+__grader__ = "Charles Wallace"
 __SelfGrade__ = "4"
-__PeerGrade__ = ""
+__PeerGrade__ = "3"
 
 """
 Random Signals and Systems
