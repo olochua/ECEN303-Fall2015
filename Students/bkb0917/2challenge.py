@@ -59,18 +59,18 @@ Solution1 /= NumberTrials
 
 print("The empirical probability that the  number of flips is 4 is "  + repr(Solution1) + ".")
 
-EvenTrials = 0
+FourTrials = 0
 NumEven = 0
 for TrialIndex3 in range(0, NumberTrials):
     if Trials[TrialIndex3]%2==0:
         NumEven += 1
         if Trials[TrialIndex3]==4:
-           EvenTrials += 1
+           FourTrials += 1
 
-EvenTrials /= NumEven
+FourTrials /= NumEven
 
 
-print("The empirical probability that the number of flips is 4 conditional on number of flips being even is " + repr(EvenTrials)
+print("The empirical probability that the number of flips is 4 conditional on number of flips being even is " + repr(FourTrials)
     + ".")
 
 
