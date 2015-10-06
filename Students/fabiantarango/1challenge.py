@@ -7,13 +7,13 @@ __grader__ = ""
 __SelfGrade__ = ""
 __PeerGrade__ = "0"
 
-#Peer Comment: Assignment not completed, was it put elsewhere?
-
 """
 Random Signals and Systems
 Course: ECEN 303-502
 Maximum Grade: 5pt
 """
+
+#Peer Comment: Assignment not completed, was it put elsewhere?
 
 import random
 import math
