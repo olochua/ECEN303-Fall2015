@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Bailey Barksdale"
+__NetID__ = "bailey13"
+__GitHubID__ = "bkb0917"
 __challenge__ = "2"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 """
@@ -15,7 +15,7 @@ Maximum Grade: 5pt
 
 import random
 import math
-import matplotlib.pyplot as plt
+import matplotlib.pyplot
 
 
 ParameterP = 1.0/3.0    # Parameter of digital coin
@@ -44,47 +44,82 @@ def geometricflip(p=0.5):
     return numberflips
 
 
-print "Part 1\n"
+print("Part 1\n")
 
 Trials = []
+Solution1 = 0
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(geometricflip(ParameterP))
-#
-# EDIT
-#
 
-print "The empirical probability that the  number of flips is 4 is " \
-    # EDIT: + repr(Solution1)) \
-    + "."
+for TrialIndex2 in range(0, NumberTrials):
+    if Trials[TrialIndex2]==4:
+           Solution1 +=1
+
+Solution1 /= NumberTrials
+
+print("The empirical probability that the  number of flips is 4 is "  + repr(Solution1) + ".")
 
 EvenTrials = 0
-for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+NumEven = 0
+for TrialIndex3 in range(0, NumberTrials):
+    if Trials[TrialIndex3]%2==0:
+        NumEven += 1
+        if Trials[TrialIndex3]==4:
+           EvenTrials += 1
 
-print "The empirical probability that the number of flips is 4 conditional on number of flips being even is " \
-    # EDIT: + repr(Solution2)) \
-    + "."
+EvenTrials /= NumEven
 
 
-print "\nPart 2\n"
+print("The empirical probability that the number of flips is 4 conditional on number of flips being even is " + repr(EvenTrials)
+    + ".")
+
+
+print("\nPart 2\n")
 
 Trials2 = []
 FinalA = 0
 FinalB = 0
-for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+Aflips = 0
+Bflips = 0
+CoinResults = []
+for TrialIndex4 in range(0, NumberTrials):
+    Aflips = geometricflip(ParameterA)
+    Bflips = geometricflip(ParameterB)
+    if Aflips<Bflips:
+        Trials2.append(Aflips)
+        CoinResults.append(0)
+    elif Aflips>Bflips:
+        Trials2.append(Bflips)
+        CoinResults.append(1)
+    else:
+        Trials2.append(Aflips)
+        CoinResults.append(2)
 
-print "The empirical probability that the number of flips is 2 is " \
-    # EDIT: + repr(Solution3)) \
-    + "."
-print "The empirical probability that coin A is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution4)) \
-    + "."
-print "The empirical probability that coin B is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution5)) \
-    + "."
+
+Solution3 = 0
+for TrialIndex5 in range(0, NumberTrials):
+    if Trials2[TrialIndex5]==2:
+        Solution3 += 1
+
+Solution3 /= NumberTrials
+AOnes = 0
+BOnes = 0
+for TrialIndex6 in range(0, NumberTrials):
+    if CoinResults[TrialIndex6]==0:
+        AOnes += 1
+    elif CoinResults[TrialIndex6]==1:
+        BOnes += 1
+    else:
+        AOnes += 1
+        BOnes += 1
+
+AOnes /= NumberTrials
+BOnes /= NumberTrials
+
+
+print("The empirical probability that the number of flips is 2 is "  + repr(Solution3)+ ".")
+print("The empirical probability that coin A is showing 1 when the stopping condition is met is " + repr(AOnes)
+    + ".")
+print("The empirical probability that coin B is showing 1 when the stopping condition is met is " + repr(BOnes)
+    + ".")
 
