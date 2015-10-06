@@ -3,9 +3,9 @@ __NetID__ = "dgf378"
 __GitHubID__ = "dfawcett"
 __challenge__ = "1"
 __version__ = "0.0"
-__grader__ = ""
+__grader__ = "Chu Liang"
 __SelfGrade__ = "5"
-__PeerGrade__ = ""
+__PeerGrade__ = "5"
 
 """
 Random Signals and Systems
