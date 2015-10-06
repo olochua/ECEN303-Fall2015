@@ -1,6 +1,6 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Zachary Smadi"
+__NetID__ = "smadi94"
+__GitHubID__ = "smadi94"
 __challenge__ = "2"
 __version__ = "0.0"
 __grader__ = ""
@@ -49,13 +49,9 @@ print "Part 1\n"
 Trials = []
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(geometricflip(ParameterP))
-#
-# EDIT
-#
-
-print "The empirical probability that the  number of flips is 4 is " \
-    # EDIT: + repr(Solution1)) \
-    + "."
+    PrFour = round(Trials.count(4)/float(len(Trials)),5) # amount of 4s in trials divided by the number of trials
+    print "The empirical probability that the  number of flips is 4 is " \
+    + repr(PrFour) + "."
 
 EvenTrials = 0
 for TrialIndex2 in range(0, NumberTrials):
