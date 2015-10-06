@@ -44,7 +44,7 @@ def geometricflip(p=0.5):
     return numberflips
 
 
-print "Part 1\n"
+print "\nPart 1\n"
 
 Trials = []
 for TrialIndex1 in range(0, NumberTrials):
@@ -56,7 +56,7 @@ print("The empirical probability that the  number of flips is 4 is " + repr(solu
 
 EvenTrials = 0
 for TrialIndex2 in range(0, NumberTrials):
-   if Trials[TrialIndex2]%2 == 0: #multiples of 2 for Trials
+   if Trials[TrialIndex2]%2 == 0: # multiples of 2 for Trials
         EvenTrials += 1
         
 solution2 = Trials.count(4)/ float(EvenTrials)
@@ -92,9 +92,9 @@ for TrialIndex3 in range(0, NumberTrials):
     FinalA += Result[1]
     FinalB += Result[2]
 
-solution3 = Trials2.count(2)/ float(NumberTrials)
-solution4 = FinalA/ float(NumberTrials)
-solution5 = FinalB/ float(NumberTrials)
+solution3 = Trials2.count(2)/ float(NumberTrials)   # for question 1
+solution4 = FinalA/ float(NumberTrials)             # for question 2
+solution5 = FinalB/ float(NumberTrials)             # for question 3
 
 
 print ("The empirical probability that the number of flips is 2 is " + repr(solution3) + ".")
