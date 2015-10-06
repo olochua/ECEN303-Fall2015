@@ -3,9 +3,9 @@ __NetID__ = ""
 __GitHubID__ = ""
 __challenge__ = "1"
 __version__ = "0.0"
-__grader__ = ""
+__grader__ = "Kaitlin Basham"
 __SelfGrade__ = ""
-__PeerGrade__ = ""
+__PeerGrade__ = "0"
 
 """
 Random Signals and Systems
