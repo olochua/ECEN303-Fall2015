@@ -3,9 +3,9 @@ __NetID__ = "mgfrakes13"
 __GitHubID__ = "mgfrakes"
 __challenge__ = "1"
 __version__ = "1.0"
-__grader__ = ""
+__grader__ = "Andrew Douglass"
 __SelfGrade__ = "3.0"
-__PeerGrade__ = ""
+__PeerGrade__ = "3.0"
 
 """
 Random Signals and Systems
