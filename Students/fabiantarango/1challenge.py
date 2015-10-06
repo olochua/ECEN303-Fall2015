@@ -5,7 +5,9 @@ __challenge__ = "1"
 __version__ = "0.0"
 __grader__ = ""
 __SelfGrade__ = ""
-__PeerGrade__ = ""
+__PeerGrade__ = "0"
+
+#Peer Comment: Assignment not completed, was it put elsewhere?
 
 """
 Random Signals and Systems
