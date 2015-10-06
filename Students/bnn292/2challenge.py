@@ -96,7 +96,6 @@ solution3 = Trials2.count(2)/ float(NumberTrials)   # for question 1
 solution4 = FinalA/ float(NumberTrials)             # for question 2
 solution5 = FinalB/ float(NumberTrials)             # for question 3
 
-
 print ("The empirical probability that the number of flips is 2 is " + repr(solution3) + ".")
 
 print ("The empirical probability that coin Alpha is showing 1 when the stopping condition is met is " + repr(solution4)+ ".")
