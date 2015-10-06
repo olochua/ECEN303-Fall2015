@@ -3,7 +3,7 @@ __NetID__ = "iDuka"
 __GitHubID__ = "iDuka"
 __challenge__ = "1"
 __version__ = "0.9"
-__grader__ = ""
+__grader__ = "Stephanie Demco"
 __SelfGrade__ = "2"
 __PeerGrade__ = "2"
 
