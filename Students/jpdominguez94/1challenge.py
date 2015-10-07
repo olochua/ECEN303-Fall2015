@@ -3,9 +3,9 @@ __NetID__ = "jpdominguez94"
 __GitHubID__ = "jpdominguez94"
 __challenge__ = "1"
 __version__ = "1.0"
-__grader__ = ""
+__grader__ = "Philip Bowie"
 __SelfGrade__ = "5"
-__PeerGrade__ = ""
+__PeerGrade__ = "5"
 
 """
 Random Signals and Systems
@@ -18,7 +18,7 @@ import math
 import matplotlib.pyplot as plt
 
 
-ParameterP = .9
+ParameterP = .3
 NumberFlips = 8
 NumberTrials = 100000
 Trials = []
