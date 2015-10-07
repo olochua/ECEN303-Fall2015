@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Stephen Sattler"
+__NetID__ = "stephensattler"
+__GitHubID__ = "bogolog"
 __challenge__ = "2"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __PeerGrade__ = ""
 
 """
@@ -49,23 +49,18 @@ print "Part 1\n"
 Trials = []
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(geometricflip(ParameterP))
-#
-# EDIT
-#
+    PrFour = round(Trials.count(4)/float(len(Trials)),5)
 
-print "The empirical probability that the  number of flips is 4 is " \
-    # EDIT: + repr(Solution1)) \
-    + "."
+print "The empirical probability that the  number of flips is 4 is " + repr(PrFour) +" \
 
 EvenTrials = 0
 for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+   If Trials[TrialIndex2]%2 == 0:
+    EvenTrials += 1
+PrEven= round(Trials.count(4)/float(EvenTrials),5)
 
 print "The empirical probability that the number of flips is 4 conditional on number of flips being even is " \
-    # EDIT: + repr(Solution2)) \
-    + "."
+    print (repr(PrEven) + "."
 
 
 print "\nPart 2\n"
@@ -74,17 +69,20 @@ Trials2 = []
 FinalA = 0
 FinalB = 0
 for TrialIndex2 in range(0, NumberTrials):
-    #
-    # EDIT
-    #
+    
+    if countA1==coinB1
+        count += 1
+    elif (coinA1+coinB1==1
+    count +=1
+    countA +=1 coinA1
+    countB +=1 coinB1
+    
+    return(count,countA,countB)
 
 print "The empirical probability that the number of flips is 2 is " \
-    # EDIT: + repr(Solution3)) \
-    + "."
+    " + repr(prTwo) + ".")
 print "The empirical probability that coin A is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution4)) \
-    + "."
+    " + repr(CoinC) + ".")
 print "The empirical probability that coin B is showing 1 when the stopping condition is met is " \
-    # EDIT: + repr(Solution5)) \
-    + "."
+    " + repr(CoinD) + ".")
 
