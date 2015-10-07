@@ -3,9 +3,9 @@ __NetID__ = "smadi94"
 __GitHubID__ = "smadi94"
 __challenge__ = "1"
 __version__ = "3.1"
-__grader__ = ""
+__grader__ = "Logan Barnard"
 __SelfGrade__ = "4"
-__PeerGrade__ = ""
+__PeerGrade__ = "5" #everything seems to be working great and is order with the answers submitted by email
 
 """
 Random Signals and Systems
