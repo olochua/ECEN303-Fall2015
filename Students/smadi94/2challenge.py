@@ -55,7 +55,7 @@ EvenTrials = 0
 for TrialIndex2 in range(0, NumberTrials):
     if Trials[TrialIndex2]%2 == 0:  # The Trials is multiple of 2
         EvenTrials +=1
-        PrEven = Trials.count(4)/float(EvenTrials)
+PrEven = Trials.count(4)/float(EvenTrials)
 
 print ("The empirical probability that the number of flips is 4 conditional on number of flips being even is " + repr(PrEven) + ".")
 
