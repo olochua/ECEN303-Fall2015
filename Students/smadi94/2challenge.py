@@ -46,8 +46,9 @@ print "Part 1\n"
 Trials = []
 for TrialIndex1 in range(0, NumberTrials):
     Trials.append(geometricflip(ParameterP))
-    PrFour = Trials.count(4)/float(NumberTrials) # amount of 4s in trials divided by the number of trials
-    print ("The empirical probability that the  number of flips is 4 is " + repr(PrFour) + ".")
+PrFour = Trials.count(4)/float(NumberTrials)
+
+print ("The empirical probability that the  number of flips is 4 is " + repr(PrFour) + ".")
 
 EvenTrials = 0
 for TrialIndex2 in range(0, NumberTrials):
