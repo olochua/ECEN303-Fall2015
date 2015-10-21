@@ -6,6 +6,7 @@ A sample method appears below.
 ```python
 import random
 import math
+import matplotlib.pyplot as plt
 
 def biasedcoinflip(p=0.5):
     """
@@ -19,7 +20,7 @@ def biasedcoinflip(p=0.5):
 A binomial random variable with parameter `n` and `p` can be created by summing exactly `n` biased coin flips.
 
 ```python
-def binomialflips(n=1,p=0.5):
+def binomialflips(n=1, p=0.5):
     """
     This method returns a binomial random variable with parameters n and p.
     The default parameters are n=1 and p=0.5; this can be changed by passing
@@ -34,7 +35,7 @@ def binomialflips(n=1,p=0.5):
 Create a method that returns a Poisson random variable.
 
 ```python
-def poisson(lambda=10):
+def poisson(parameterpoisson=10):
     #
     # EDIT
     #
@@ -46,8 +47,8 @@ Then, use this integer as the first argument in `binomialflips()`, along with `p
 The output of this latter method is the outcome of the experiment.
 
 ```python
-def experiment3(parameterpoisson3=10,p=0.5):
-    return binomialflips(poisson(parameterpoisson3),p)
+def experiment3(parameterpoisson3=10, p=0.5):
+    return binomialflips(poisson(parameterpoisson3), p)
 ```
 
 Use averaging over a large number of trials to get an approximate value for the mean of `experiment3()`.
