@@ -31,7 +31,7 @@ def binomialflips(n=1,p=0.5):
     return numberones
 ```
 
-Create a method that return a Poisson random variable.
+Create a method that returns a Poisson random variable.
 
 ```python
 def poisson(lambda=10):
