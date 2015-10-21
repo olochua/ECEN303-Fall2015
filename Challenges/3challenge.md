@@ -21,8 +21,9 @@ A binomial random variable with parameter `n` and `p` can be created by summing 
 ```python
 def binomialflips(n=1,p=0.5):
     """
-    This method returns a binomial random variable with parameters n and p. The default parameters are n=1 and
-    p=0.5; this can be changed by passing arguments to the method.
+    This method returns a binomial random variable with parameters n and p.
+    The default parameters are n=1 and p=0.5; this can be changed by passing
+    arguments to the method.
     """
     numberones = 0
     for BinomialIndex in range(0,n):
