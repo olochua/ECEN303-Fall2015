@@ -1,10 +1,8 @@
 __author__ = ""
 __NetID__ = ""
 __GitHubID__ = ""
-__challenge__ = "1"
-__grader__ = ""
 __SelfGrade__ = ""
-__PeerGrade__ = ""
+__Challenge__ = "1"
 
 """
 Random Signals and Systems
