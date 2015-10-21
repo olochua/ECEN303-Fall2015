@@ -1,0 +1,8 @@
+Hello,
+
+You will find below a link to Programming Challenge 3. As part of this exercise, you are asked to program a poisson random variable. Programming Challenge 3 is due on: Tuesday, October 27, online. A template named 3challenge.py has been placed in your personal folder. Edit this template and address the questions. You are encouraged to work in groups, yet you need to submit your own python code.
+
+Regards,
+Jean-Francois Chamberland
+
+https://github.com/CourseReps/ECEN303-Fall2015/blob/master/Challenges/3challenge.md
