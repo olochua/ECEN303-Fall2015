@@ -40,7 +40,7 @@ def poisson(lambda=10):
     #
 ```
 
-Next, create a random variable through the following process.
+Next, create a random variable through the following procedure.
 First, use the `poisson()` method with paramater `parameterpoisson=10` to generate an integer.
 Then, use this integer as the first argument in `binomialflips()`, along with `p=0.5` as the second argument.
 The output of this latter method is the outcome of the experiment.
