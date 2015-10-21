@@ -19,4 +19,5 @@ Pay special attention to uppercase and lowercase letters; the grading scripts ma
 
 1. [Coin Flips](./1challenge.md)
 2. [Geometric Coin Flips](./2challenge.md)
+2. [Poisson Random Variables](./3challenge.md)
 
