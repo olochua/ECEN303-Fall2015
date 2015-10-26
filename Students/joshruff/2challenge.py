@@ -1,10 +1,10 @@
-__author__ = ""
-__NetID__ = ""
-__GitHubID__ = ""
+__author__ = "Joshua Ruff"
+__NetID__ = "joshruff"
+__GitHubID__ = "joshruff"
 __challenge__ = "2"
 __version__ = "0.0"
 __grader__ = ""
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __PeerGrade__ = ""
 
 #***Written Using Python 3***
