@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "justin lewis "
+__NetID__ = "justin94lewis"
+__GitHubID__ = "LewisWithoutClark"
+__SelfGrade__ = ""
 __Challenge__ = "3"
 
 """
@@ -37,15 +37,24 @@ def binomialflips(n=1, p=0.5):
     return numberones
 
 
-def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+def poisson(lamb=10):
+    el = math.exp(-lamb)
+    k = 0
+    p = 1
+    while True:
+        u = random.random()
+        k += 1
+        p *= u
+        if(p < el):
+            break
+    return k - 1
+
+
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+    #return poisson(binomialflips(parameterpoisson3, p))
 
 
 ParameterPoisson = 10
@@ -73,11 +82,10 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean is approx = 5, or lambda/2
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: The distribution seems identical to a poisson distribution with lambda' = lambda/2
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
-
+# Answer 3: No, they are similiar; however, they are not the same.
