@@ -1,7 +1,7 @@
 __author__ = "Weston Torti"
 __NetID__ = "tort115"
 __GitHubID__ = "westort"
-__SelfGrade__ = "4"
+__SelfGrade__ = "5"
 __Challenge__ = "3"
 
 """
@@ -44,9 +44,9 @@ def poisson(parameterpoisson=10):
     compare = random.random()
     while(total < compare):
 
-        total += pow(lamda,k)*math.exp(-1*lamda)*pow(math.factorial(k),-1)
+        total += pow(math.factorial(k),-1) * pow(lamda,k) * math.exp(-1*lamda)
         k+=1
-    return k
+    return k-1
 def experiment3(parameterpoisson3=10, p=0.5):
 
     return binomialflips(poisson(parameterpoisson3), p)
@@ -77,12 +77,12 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: the mean of experiment3 is approximately 5.5
+# Answer 1: the mean of experiment3 is approximately 5.00
 
 # Question 2: What is the type of experiment3()?
 # Answer 2: Experiment 3 is a poisson type
 
 # Question 3: Do the two distributions match?
-# Answer 3: No, they do not match, with the second method you get a distribution of either 5 or 6. Since a poisson
+# Answer 3: No, they do not match, with the second method you get a distribution of either 4 or 5. Since a poisson
 # is taken after the probability with the second method, only an integer can be yielded.
 
