@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Weston Torti"
+__NetID__ = "tort115"
+__GitHubID__ = "westort"
+__SelfGrade__ = "4"
 __Challenge__ = "3"
 
 """
@@ -38,15 +38,19 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    lamda = parameterpoisson #setting name to fit the formula
+    k = 0 #for number of iterations
+    total = 0 #sum of the iterations
+    compare = random.random()
+    while(total < compare):
 
-
+        total += pow(lamda,k)*math.exp(-1*lamda)*pow(math.factorial(k),-1)
+        k+=1
+    return k
 def experiment3(parameterpoisson3=10, p=0.5):
-    return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
 
+    return binomialflips(poisson(parameterpoisson3), p)
+    #return poisson(binomialflips(parameterpoisson3, p))
 
 ParameterPoisson = 10
 NumberTrials = 100000
@@ -73,11 +77,12 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: the mean of experiment3 is approximately 5.5
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Experiment 3 is a poisson type
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: No, they do not match, with the second method you get a distribution of either 5 or 6. Since a poisson
+# is taken after the probability with the second method, only an integer can be yielded.
 

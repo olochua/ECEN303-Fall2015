@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Derek Heidtke"  # EDIT
+__NetID__ = "derek.heidtke"  # EDIT
+__GitHubID__ = "derekheidtke"  # EDIT
+__SelfGrade__ = "5"  # EDIT
 __Challenge__ = "3"
 
 """
@@ -9,7 +9,6 @@ Random Signals and Systems
 Course: ECEN 303-502
 Maximum Grade: 5
 """
-
 
 import random
 import math
@@ -38,28 +37,45 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    """
+    This method returns a poisson random variable with parameter lambda.
+    The default parameter is lambda=10. This can be changed by passing
+    an argument to the method.
+    """
+    randprob = random.random()
+    l = parameterpoisson
+
+    k = 0
+    sum = 0
+    while (1):
+        sum += pow(l,k)*math.exp(-1*l)/math.factorial(k)
+        if (sum > randprob):
+            break
+        k += 1
+    return k
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+    #return poisson(binomialflips(parameterpoisson3, p))
 
-
-ParameterPoisson = 10
+#========================================================================================
+# Experiment
+ParameterPoisson = 4
 NumberTrials = 100000
 TrialSequence = []
 
-for TrialIndex1 in range(0, NumberTrials):
+for i in range(0, NumberTrials):
     TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+    #TrialSequence.append(poisson(ParameterPoisson))  # uncomment to test poisson distribution
+print sum(TrialSequence)/float(len(TrialSequence))
 
 Distribution = []
-for OutcomeIndex1 in range(0, 21):
-    Distribution.append(TrialSequence.count(OutcomeIndex1) / (1.0 * NumberTrials))
+for i in range(0, 21):
+    Distribution.append(TrialSequence.count(i) / (1.0 * NumberTrials))
 
+#========================================================================================
+# Plotting
 OutcomeIndex2 = range(0, 21)
 num_bins = len(OutcomeIndex2)
 bar_width = 0.8
@@ -73,11 +89,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: Mean of experiment3() is: 4.99
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: experiment3() is a random variable of type: Poisson w/ lambda = 5
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: No, the two distributions do not match.
 
