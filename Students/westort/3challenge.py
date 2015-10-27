@@ -46,7 +46,7 @@ def poisson(parameterpoisson=10):
 
         total += pow(math.factorial(k),-1) * pow(lamda,k) * math.exp(-1*lamda)
         k+=1
-    return k-1
+    return k-1 #runs for 1 iteration too many with while loop. so k decrement is necessary
 def experiment3(parameterpoisson3=10, p=0.5):
 
     return binomialflips(poisson(parameterpoisson3), p)
