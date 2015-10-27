@@ -1,7 +1,7 @@
-__author__ = "Kaitlin Basham"  # EDIT
-__NetID__ = "klb3736"  # EDIT
-__GitHubID__ = "klb3736"  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Kaitlin Basham"
+__NetID__ = "klb3736"
+__GitHubID__ = "klb3736"
+__SelfGrade__ = "4"
 __Challenge__ = "3"
 
 """
@@ -38,10 +38,20 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
-
+   """
+   This generates a Poisson random variable using the inverse transform sampling method.
+   """
+    lam=parameterpoisson
+    r=random.random()
+    k=0
+    p=math.exp(-1*l)
+    s=p
+    
+    while(s<r):
+        k+= 1
+        p= p*l/k
+        s+= p
+    return k
 
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
@@ -73,11 +83,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean of experiment3() is approximately 5.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: experiment3() is of poisson type with lambda=lambda/2, or labmda=5 in this case.
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: The two distributions do not match.
 
