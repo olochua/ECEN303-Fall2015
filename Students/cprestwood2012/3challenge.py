@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Colbie Prestwood"  
+__NetID__ = "cprestwood2012"  
+__GitHubID__ = "cprestwood2012"  
+__SelfGrade__ = "4"  
 __Challenge__ = "3"
 
 """
@@ -9,7 +9,7 @@ Random Signals and Systems
 Course: ECEN 303-502
 Maximum Grade: 5
 """
-
+#updated some print statements to work with updated python version
 
 import random
 import math
@@ -38,9 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    
+    probrandom = random.random()
+    1 = parameterpoisson
+    
+    k = 0
+    sum = 0
+    while (true):
+        sum += pow(1,k)*math.exp(-1)/math.factorial(k)
+        if (sum > probrandom):
+            break
+        k+=1
+    return k
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -54,7 +63,7 @@ TrialSequence = []
 
 for TrialIndex1 in range(0, NumberTrials):
     TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+print (sum(TrialSequence)/len(TrialSequence))
 
 Distribution = []
 for OutcomeIndex1 in range(0, 21):
@@ -73,11 +82,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: experiment3() returns a mean value around 5.001, which is roughly lambda/2.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: experiment3() falls under the Poisson Random Variable with lambda value of 5.
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: When comparing the mean of each distribution we can see that though they are very similar they do not match.
 
