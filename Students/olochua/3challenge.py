@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Jui Yen Chua"  
+__NetID__ = "olochua" 
+__GitHubID__ = "olochua" 
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
@@ -38,9 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    
+	rand_num = random.random() #this is the random value for while loop exit condition
+	k = 0 #k in poisson random variable
+	sum = 0 #sum of the poisson random variable
+	
+	while sum < rand_num: #compute poisson random variable with lambda = parameterpoisson
+		sum += (pow(parameterpoisson, k)/math.factorial(k))*math.exp(-parameterpoisson)
+		rand_num = random.random()
+		k += 1 #increment k 
+		
+	return k-1 #return the last k that makes the sum match with the condition
+	
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -73,11 +82,10 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean of experiment3() is about 3.98.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Based on the bar graph generated, experiment3() is of type Poisson.
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
-
+# Answer 3: The general pattern and scaling of each bar in the graph is very similar to one another, however, the distributions are not identical.
