@@ -1,7 +1,7 @@
-__author__ = "Craig Wolf"  # EDIT
-__NetID__ = "Dallascowboys10"  # EDIT
-__GitHubID__ = "CraigWolf10"  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Craig Wolf"  
+__NetID__ = "Dallascowboys10"  
+__GitHubID__ = "CraigWolf10"  
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
