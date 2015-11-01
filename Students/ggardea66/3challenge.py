@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Gissel Gardea"  
+__NetID__ = "gardegi059" 
+__GitHubID__ = "ggardea66" 
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
@@ -9,7 +9,6 @@ Random Signals and Systems
 Course: ECEN 303-502
 Maximum Grade: 5
 """
-
 
 import random
 import math
@@ -38,9 +37,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+
+    po = math.exp(-parameterpoisson)
+    prob = 0
+    k = 0
+    id_prob = 1
+    while True:
+        ot = random.random()
+        k += 1
+        id_prob *= ot
+        if(id_prob < po):
+            break
+    return k -1
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -54,7 +62,7 @@ TrialSequence = []
 
 for TrialIndex1 in range(0, NumberTrials):
     TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+print (sum(TrialSequence)/len(TrialSequence))
 
 Distribution = []
 for OutcomeIndex1 in range(0, 21):
@@ -72,12 +80,13 @@ plt.ylabel("Probability")
 plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
+
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean is about 5.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Experiment 3 is a Poisson distribution
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: No, they do not match.
 
