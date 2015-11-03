@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Shannon Morrissey" 
+__NetID__ = "shannon.morrissey" 
+__GitHubID__ = "shmorrissey" 
+__SelfGrade__ = "5" 
 __Challenge__ = "3"
 
 """
@@ -38,9 +38,14 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    finish1 = random.random()
+    k = 0
+    pmf = 0
+    
+    while (pmf < finish1):
+        pmf += (pow(parameterpoisson, k) * math.exp(-1*parameterpoisson)) / math.factorial(k)
+        k += 1
+    return k - 1
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -66,6 +71,7 @@ bar_width = 0.8
 XticksIndex = [(outcome + (0.5 * bar_width)) for outcome in OutcomeIndex2]
 opacity = 0.4
 
+#plot details
 plt.bar(OutcomeIndex2, Distribution, bar_width, alpha=opacity, color='b')
 plt.xlabel("Value")
 plt.ylabel("Probability")
@@ -73,11 +79,10 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: the mean of experiment 3 is 5 (varies from 4.999 to 5.0001)
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Experiment 3 is a poisson experiment with lambda equal to 5
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
-
+# Answer 3: No.  The two distributions are similar but they are not a match.
