@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Chu Liang"
+__NetID__ = "cml1012" 
+__GitHubID__ = "cml1012"  
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
