@@ -1,7 +1,7 @@
 __author__ = "J. Fernando Romo"  
 __NetID__ = "jfernandoromoddl" 
 __GitHubID__ = "FernandoRomo" 
-__SelfGrade__ = ""  # EDIT
+__SelfGrade__ = "5"
 __Challenge__ = "3"
 
 """
