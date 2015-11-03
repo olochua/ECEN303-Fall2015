@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Bailey Barksdale"  # EDIT
+__NetID__ = "bailey13"  # EDIT
+__GitHubID__ = "bkb917"  # EDIT
+__SelfGrade__ = "4"  # EDIT
 __Challenge__ = "3"
 
 """
@@ -38,14 +38,17 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+   k = 0
+   p = random.random()
+   while p >= math.exp(-1*parameterpoisson): #p>=e^(-lambda)
+        p = p*random.random()
+        k = k+1
+   return k
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
-    return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+    #return binomialflips(poisson(parameterpoisson3), p)
+    return poisson(binomialflips(parameterpoisson3, p))
 
 
 ParameterPoisson = 10
@@ -54,7 +57,7 @@ TrialSequence = []
 
 for TrialIndex1 in range(0, NumberTrials):
     TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+print(sum(TrialSequence)/len(TrialSequence))
 
 Distribution = []
 for OutcomeIndex1 in range(0, 21):
@@ -73,11 +76,15 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean of experiment3() is approximately 5.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Experiment3() is a poisson random variable
+# experiment expressed using a poisson random variable
+# distribution and a binomial random variables
+# convergence to a poisson distribution
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: The two distributions are slightly
+# different even though the means are equivalent.
 
