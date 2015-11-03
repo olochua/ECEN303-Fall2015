@@ -1,6 +1,6 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
+__author__ = "Katy Nix"  
+__NetID__ = "katy.nix"  
+__GitHubID__ = "KANix94"  
 __SelfGrade__ = ""  # EDIT
 __Challenge__ = "3"
 
