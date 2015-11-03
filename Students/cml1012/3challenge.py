@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Chu Liang"
+__NetID__ = "cml1012" 
+__GitHubID__ = "cml1012"  
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
@@ -38,9 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    
+    ProbRandom = random.random()
+    1 = parameterpoisson
+    
+    k = 0
+    sum = 0
+    while(1):
+        sum += pow (1,k)*math.exp(-1*1)/math.factorial(k)
+        if (sum > ProbRandom):
+            break
+        k += 1
+    return k    
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -73,11 +82,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean is lamda/2
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Binomial poisson experiment.
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: No they don't, but they're very similar to each other.
 

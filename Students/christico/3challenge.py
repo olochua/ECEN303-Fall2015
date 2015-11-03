@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Chrsitian Rodriguez"
+__NetID__ = "christico"  
+__GitHubID__ = "christico" 
+__SelfGrade__ = "5"  
 __Challenge__ = "3"
 
 """
@@ -38,14 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    finish = random.random()
+    k = 0
+    pmf = 0
+    while (pmf < finish):
+           pmf += (pow(parameterpoisson, k) * math.exp(-1*parameterpoisson)) / math.factorial(k)
+           k += 1
 
+    return k - 1
 
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+    # return poisson(binomialflips(parameterpoisson3, p)
 
 
 ParameterPoisson = 10
@@ -73,11 +77,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: it is 5
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: poisson
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: no they do not
 

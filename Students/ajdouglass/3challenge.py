@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Andrew Douglass"
+__NetID__ = "adoulgas"
+__GitHubID__ = "ajdouglass"
+__SelfGrade__ = "5pt"
 __Challenge__ = "3"
 
 """
@@ -11,9 +11,9 @@ Maximum Grade: 5
 """
 
 
-import random
-import math
-import matplotlib.pyplot as plt
+import random                      # obtain a random number
+import math                        # use e constant
+import matplotlib.pyplot as plt    # plot poisson distribution
 
 
 def biasedcoinflip(p=0.5):
@@ -38,9 +38,17 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+    """
+    This method calculates and returns the value of a poisson random variable
+    with the value for lambda as that passed in the parameterpoisson parameter
+    """
+    k = 0                  # start k at 0
+    p = random.random()    # generate a random number between 0 and 1.0
+    el = math.exp(-1 * parameterpoisson)    # e^-lambda
+    while p > el:    # while the random generated number is greater than e^-lambda
+        k = k + 1    # increment k
+        p = p * random.random()    # multiply p by new random number between 0 and 1.0
+    return k                       # return this value for k
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -48,36 +56,36 @@ def experiment3(parameterpoisson3=10, p=0.5):
     # return poisson(binomialflips(parameterpoisson3, p))
 
 
-ParameterPoisson = 10
-NumberTrials = 100000
-TrialSequence = []
+ParameterPoisson = 10     # parameter for poisson random variable
+NumberTrials = 100000     # number of trails to perform
+TrialSequence = []        # store values of each experiment
 
-for TrialIndex1 in range(0, NumberTrials):
-    TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+for TrialIndex1 in range(0, NumberTrials):      # execute NumberTrails times
+    TrialSequence.append(experiment3(ParameterPoisson))    # add return value of experiment
+print(sum(TrialSequence)/len(TrialSequence))     # print the mean of experiment3
 
-Distribution = []
-for OutcomeIndex1 in range(0, 21):
-    Distribution.append(TrialSequence.count(OutcomeIndex1) / (1.0 * NumberTrials))
+Distribution = []      # hold the distribution of the experiment
+for OutcomeIndex1 in range(0, 21):    # run 21 times
+    Distribution.append(TrialSequence.count(OutcomeIndex1) / (1.0 * NumberTrials))  # count distribution percentage
 
-OutcomeIndex2 = range(0, 21)
-num_bins = len(OutcomeIndex2)
-bar_width = 0.8
-XticksIndex = [(outcome + (0.5 * bar_width)) for outcome in OutcomeIndex2]
-opacity = 0.4
+OutcomeIndex2 = range(0, 21)    # run 21 times
+num_bins = len(OutcomeIndex2)   # hold the number of distributions to graph
+bar_width = 0.8                 # width of each bar graph
+XticksIndex = [(outcome + (0.5 * bar_width)) for outcome in OutcomeIndex2]  # spacing of each bar graph
+opacity = 0.4      # transparency of graph
 
-plt.bar(OutcomeIndex2, Distribution, bar_width, alpha=opacity, color='b')
-plt.xlabel("Value")
-plt.ylabel("Probability")
-plt.xticks(XticksIndex, OutcomeIndex2)
-plt.show()
+plt.bar(OutcomeIndex2, Distribution, bar_width, alpha=opacity, color='b')   # plot the bar graph
+plt.xlabel("Value")                 # label the x axis
+plt.ylabel("Probability")           # label the y axis
+plt.xticks(XticksIndex, OutcomeIndex2)     # space out each bar for each distribution
+plt.show()                          # show the graph
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# The mean is approximately 5 (plus or minus 0.01)
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# experiment3 resembles a Poisson random variable as the
+# number of trails increases
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
-
+# No, distributions are different despite equivalent means

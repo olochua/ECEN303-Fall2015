@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Katy Nix"  
+__NetID__ = "katy.nix"  
+__GitHubID__ = "KANix94"  
+__SelfGrade__ = "5" 
 __Challenge__ = "3"
 
 """
@@ -17,20 +17,20 @@ import matplotlib.pyplot as plt
 
 
 def biasedcoinflip(p=0.5):
-    """
-    This method returns a one with probability p and it returns a zero with
-    probability (1 - p). The default parameter is p=0.5; this can be changed
-    by passing an argument to the method.
-    """
+    
+    #This method returns a one with probability p and it returns a zero with
+    #probability (1 - p). The default parameter is p=0.5; this can be changed
+    #by passing an argument to the method.
+	
     return math.floor(random.random() + p)
 
 
 def binomialflips(n=1, p=0.5):
-    """
-    This method returns a binomial random variable with parameters n and p.
-    The default parameters are n=1 and p=0.5; this can be changed by passing
-    arguments to the method.
-    """
+
+    #This method returns a binomial random variable with parameters n and p.
+    #The default parameters are n=1 and p=0.5; this can be changed by passing
+    #arguments to the method. 
+	
     numberones = 0
     for BinomialIndex in range(0,n):
         numberones += biasedcoinflip(p)
@@ -38,9 +38,14 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+	pmf = 0
+	k = 0
+	randomPoisson = random.random()
+	
+    while (pmf < randomPoisson): 
+		pmf += pow(parameterPoisson,k)* math.edp(-1*parameterPoisson)/math.factorial(k)
+		k += 1
+	return k-1
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -73,11 +78,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: Mean = 5
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Poisson
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: No
 

@@ -1,6 +1,6 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
+__author__ = "Morgan Frakes"  # EDIT
+__NetID__ = "mgfrakes13"  # EDIT
+__GitHubID__ = "mgfrakes"  # EDIT
 __SelfGrade__ = ""  # EDIT
 __Challenge__ = "3"
 
@@ -32,15 +32,21 @@ def binomialflips(n=1, p=0.5):
     arguments to the method.
     """
     numberones = 0
-    for BinomialIndex in range(0,n):
+    for BinomialIndex in range(0, n):
         numberones += biasedcoinflip(p)
     return numberones
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+
+    finish = random.random()
+    k = 0
+    pmf = 0
+    while (pmf < finish):
+        pmf += (pow(parameterpoisson, k) * math.exp(-1*parameterpoisson)) / math.factorial(k)
+        k += 1
+
+    return k - 1
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
@@ -73,11 +79,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: 5
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: Poisson
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: They are similar, but don't match completely.
 

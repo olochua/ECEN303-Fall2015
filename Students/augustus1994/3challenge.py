@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Fletcher Watts"
+__NetID__ = "augustus1994"
+__GitHubID__ = "augustus1994"
+__SelfGrade__ = "5"
 __Challenge__ = "3"
 
 """
@@ -38,14 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
-
+    #Edit
+    randprobability = random.random()
+    pmf = 0
+    k = 0
+    while(pmf < randprobability):
+        pmf += (pow(parameterpoisson,k)* math.exp(-1*parameterpoisson)/math.factorial(k))
+        k += 1
+    return k-1
 
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+     #return poisson(binomialflips(parameterpoisson3, p)) used to test the poisson variable
 
 
 ParameterPoisson = 10
@@ -54,7 +58,8 @@ TrialSequence = []
 
 for TrialIndex1 in range(0, NumberTrials):
     TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+    #TrialSequence.append(poisson(ParameterPoisson))
+print sum(TrialSequence)/float(len(TrialSequence))
 
 Distribution = []
 for OutcomeIndex1 in range(0, 21):
@@ -73,11 +78,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean is 5
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: experiment 3 is of type Poisson.
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: They are similar but do not match.
 
