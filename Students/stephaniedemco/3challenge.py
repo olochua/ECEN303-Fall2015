@@ -1,7 +1,7 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+__author__ = "Stephanie Demco"
+__NetID__ = "steph1995"
+__GitHubID__ = "Stephaniedemco"
+__SelfGrade__ = "5"
 __Challenge__ = "3"
 
 """
@@ -38,15 +38,18 @@ def binomialflips(n=1, p=0.5):
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
-
-
+    done = random.random()
+    k=0
+    pmf=0
+    
+    while(pmf<done)
+         pmf+=(pow(parameterpoisson, k)*math.exp((-1)*parameterpoisson))/math.factorial(k)
+        k+=1
+    return k-1
+    
 def experiment3(parameterpoisson3=10, p=0.5):
     return binomialflips(poisson(parameterpoisson3), p)
     # return poisson(binomialflips(parameterpoisson3, p))
-
 
 ParameterPoisson = 10
 NumberTrials = 100000
