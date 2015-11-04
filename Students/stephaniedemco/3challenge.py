@@ -76,11 +76,11 @@ plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
 # Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+# Answer 1: The mean of the experiment is 5.
 
 # Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+# Answer 2: The type of experiment is Poisson. 
 
 # Question 3: Do the two distributions match?
-# Answer 3: EDIT
+# Answer 3: THe two distributions do not match, but they are very much alike.
 
