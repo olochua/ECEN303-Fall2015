@@ -42,7 +42,7 @@ def poisson(parameterpoisson=10):
     k=0
     pmf=0
     
-    while(pmf<done)
+    while(pmf<done):
          pmf+=(pow(parameterpoisson, k)*math.exp((-1)*parameterpoisson))/math.factorial(k)
         k+=1
     return k-1
