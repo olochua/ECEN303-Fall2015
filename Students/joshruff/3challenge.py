@@ -1,7 +1,8 @@
-__author__ = ""  # EDIT
-__NetID__ = ""  # EDIT
-__GitHubID__ = ""  # EDIT
-__SelfGrade__ = ""  # EDIT
+
+__author__ = "Joshua Ruff"  # EDIT
+__NetID__ = "joshruff"  # EDIT
+__GitHubID__ = "joshruff"  # EDIT
+__SelfGrade__ = "5"  # EDIT
 __Challenge__ = "3"
 
 """
@@ -17,35 +18,41 @@ import matplotlib.pyplot as plt
 
 
 def biasedcoinflip(p=0.5):
-    """
-    This method returns a one with probability p and it returns a zero with
-    probability (1 - p). The default parameter is p=0.5; this can be changed
-    by passing an argument to the method.
-    """
-    return math.floor(random.random() + p)
+	"""
+	This method returns a one with probability p and it returns a zero with
+	probability (1 - p). The default parameter is p=0.5; this can be changed
+	by passing an argument to the method.
+	"""
+	return math.floor(random.random() + p)
 
 
 def binomialflips(n=1, p=0.5):
-    """
-    This method returns a binomial random variable with parameters n and p.
-    The default parameters are n=1 and p=0.5; this can be changed by passing
-    arguments to the method.
-    """
-    numberones = 0
-    for BinomialIndex in range(0,n):
-        numberones += biasedcoinflip(p)
-    return numberones
+	"""
+	This method returns a binomial random variable with parameters n and p.
+	The default parameters are n=1 and p=0.5; this can be changed by passing
+	arguments to the method.
+	"""
+	numberones = 0
+	for BinomialIndex in range(0,n):
+		numberones += biasedcoinflip(p)
+	return numberones
 
 
 def poisson(parameterpoisson=10):
-    #
-    # EDIT
-    #
+	L=math.exp(-1*parameterpoisson)
+	p=1
+	k=0
+	while p>L:
+		k=k+1
+		u=random.random()
+		p=p*u
+	return k-1
 
 
 def experiment3(parameterpoisson3=10, p=0.5):
-    return binomialflips(poisson(parameterpoisson3), p)
-    # return poisson(binomialflips(parameterpoisson3, p))
+	
+	return binomialflips(poisson(parameterpoisson3), p)
+	 #return poisson(binomialflips(parameterpoisson3, p))
 
 
 ParameterPoisson = 10
@@ -53,12 +60,12 @@ NumberTrials = 100000
 TrialSequence = []
 
 for TrialIndex1 in range(0, NumberTrials):
-    TrialSequence.append(experiment3(ParameterPoisson))
-print sum(TrialSequence)/len(TrialSequence)
+	TrialSequence.append(experiment3(ParameterPoisson))
+print(sum(TrialSequence)/len(TrialSequence))
 
 Distribution = []
 for OutcomeIndex1 in range(0, 21):
-    Distribution.append(TrialSequence.count(OutcomeIndex1) / (1.0 * NumberTrials))
+	Distribution.append(TrialSequence.count(OutcomeIndex1) / (1.0 * NumberTrials))
 
 OutcomeIndex2 = range(0, 21)
 num_bins = len(OutcomeIndex2)
@@ -72,12 +79,12 @@ plt.ylabel("Probability")
 plt.xticks(XticksIndex, OutcomeIndex2)
 plt.show()
 
-# Question 1: What is the mean of experiment3()?
-# Answer 1: EDIT
+## Question 1: What is the mean of experiment3()?
+## Answer 1: The mean of experiment 3 is around 5
 
-# Question 2: What is the type of experiment3()?
-# Answer 2: EDIT
+## Question 2: What is the type of experiment3()?
+## Answer 2: Compound Poisson Distribution
 
-# Question 3: Do the two distributions match?
-# Answer 3: EDIT
+## Question 3: Do the two distributions match?
+## Answer 3: The two distributions have the same mean but the outcome of each graphs of the different distributions have slightly different shapes, therefore the distributions do not match. 
 
