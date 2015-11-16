@@ -10,7 +10,7 @@ import numpy
 import pylab
 ```
 
-Generate pseudo-random numbers using `random.uniform(0,math.PI)` and `random.expovariate(1)`.
+Generate pseudo-random numbers using `random.uniform(0,math.PI)` and `numpy.random.rayleigh(1)`.
 
 ```python
 TrialNumber = 10000
@@ -21,7 +21,7 @@ for trial1 in range(0, TrialNumber):
     RayleighList.append(numpy.random.rayleigh(1))
 ```
 
-Plot the empirical distributions associated with `UniformList` and `RayleighList` using binning/quantization or cummulative distribution functions.
+Plot the empirical distributions associated with `UniformList` and `RayleighList` using binning/quantization or cumulative distribution functions.
 
 ```python
 pylab.figure()
@@ -47,7 +47,7 @@ for trial2 in range(0, TrialNumber):
     Sequence3.append(math.sqrt(Sequence1[trial2]**2 + Sequence2[trial2]**2))
 ```
 
-Plot the empirical distributions associated with `Sequence1`, `Sequence2`, `Sequence3` using binning/quantization or cummulative distribution functions.
+Plot the empirical distributions associated with `Sequence1`, `Sequence2`, `Sequence3` using binning/quantization or cumulative distribution functions.
 
 * What is the type of random variable `Sequence1`?
 * What is its mean and variance?
