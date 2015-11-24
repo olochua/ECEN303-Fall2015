@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "alexgarcia2013"
+__GitHubID__ = "alexgarcia2013"
+__SelfGrade__ = "2"
 __Challenge__ = "4"
 
 """
@@ -46,12 +46,19 @@ for trial2 in range(0, TrialNumber):
 
 """
 What is the type of random variable `Sequence1`?
+Uniform Distribution Random Variable
 What is its mean and variance?
+Mean is around 3.4 and Var is
 What is the type of random variable `Sequence2`?
+Looks like a Rayleigh Distributed Continuous Random Variable
 What is its mean and variance?
 What is the type of random variable `Sequence3`?
+I couldn't get this part to work, but judging that I was supposed to somehow combine a 
+continuous uniform distribution and Rayleigh, I would guess that it should be a gaussian distribution.
 What is its mean and variance?
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 Do you think they are independent? Justify your answer.
+The sequences appear to be dependent as 1 and 2 don't dependend on one another,
+but since the 3rd is a combination of the previous two it must be dependent.
 """
 
