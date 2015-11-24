@@ -40,18 +40,51 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence1, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'r', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence2, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'g', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence3, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'b', 'alpha', 0.75)
+
+print(numpy.cov(Sequence1,Sequence2))
+
+
+pylab.show()
+
 #
 # EDIT
 #
 
 """
-What is the type of random variable `Sequence1`?
-What is its mean and variance?
-What is the type of random variable `Sequence2`?
-What is its mean and variance?
-What is the type of random variable `Sequence3`?
-What is its mean and variance?
-What is the empirical covariance between `Sequence1` and `Sequence2`?
-Do you think they are independent? Justify your answer.
+What is the type of random variable `Sequence1`? 
+	-Gaussian
+What is its mean and variance?	
+	-Mean is 0
+	-Variance is 1
+
+
+What is the type of random variable `Sequence2`? 
+	-Gaussian
+What is its mean and variance?	
+	-Mean is 0
+	-Variance is 1
+
+
+What is the type of random variable `Sequence3`? 
+	-Exponential
+What is its mean and variance?	
+	-Lambda is 0.5 
+	-Mean is 1/Lambda = 2
+	Variance is 1/Lambda^2 = 4
+
+
+What is the empirical covariance between `Sequence1` and `Sequence2`? 0
+Do you think they are independent? Justify your answer. Yes. The sum of the expectation of sequence 1 and sequence 2 equals the expectation of the sums. 
 """
 
