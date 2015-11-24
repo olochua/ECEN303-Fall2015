@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "TrevorMalota"
+__GitHubID__ = "trevmalota"
+__SelfGrade__ = "2"
 __Challenge__ = "4"
 
 """
@@ -40,18 +40,28 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+print(numpy.mean(Sequence1))
+print(numpy.var(Sequence1))
+
+print(numpy.mean(Sequence2))
+print(numpy.var(Sequence2))
+
+print(numpy.mean(Sequence3))
+print(numpy.var(Sequence3))
 
 """
+I can't get the numpy library file to work properly so the program won't run.
 What is the type of random variable `Sequence1`?
+Continuous (sine)
 What is its mean and variance?
+Since Sequence 1 is a sin function the mean should be 0 and the variance should be 1
 What is the type of random variable `Sequence2`?
+Continuous (cosine)
 What is its mean and variance?
+Since it is cosine the mean should be 0 and variance 1
 What is the type of random variable `Sequence3`?
 What is its mean and variance?
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 Do you think they are independent? Justify your answer.
+They should be independent because they do not rely on each other
 """
-
