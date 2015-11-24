@@ -1,5 +1,5 @@
-__NetID__ = ""
-__GitHubID__ = ""
+__NetID__ = "gka243"
+__GitHubID__ = "gka243"
 __SelfGrade__ = ""
 __Challenge__ = "4"
 
@@ -40,16 +40,31 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence1, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'r', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence2, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'b', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence3, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'y', 'alpha', 0.75)
+
+pylab.show()
 
 """
 What is the type of random variable `Sequence1`?
+Gaussian Distribution
 What is its mean and variance?
+Mean = 0
 What is the type of random variable `Sequence2`?
+Gaussian Distribution
 What is its mean and variance?
+Mean=0
 What is the type of random variable `Sequence3`?
+Exponential Distribution
 What is its mean and variance?
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 Do you think they are independent? Justify your answer.
