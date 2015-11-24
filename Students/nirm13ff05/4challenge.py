@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "nirm13ff05"
+__GitHubID__ = "nirm13ff05"
+__SelfGrade__ = "4"
 __Challenge__ = "4"
 
 """
