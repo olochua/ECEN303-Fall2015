@@ -1,5 +1,5 @@
-__NetID__ = "cml1012"
-__GitHubID__ = "cml1012"
+__NetID__ = " cml1012 "
+__GitHubID__ = " cml1012 "
 __SelfGrade__ = "5"
 __Challenge__ = "4"
 
