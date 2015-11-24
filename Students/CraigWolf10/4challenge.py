@@ -71,24 +71,21 @@ print "covariance1: "
 print numpy.cov(Sequence1,Sequence2)
 """
 What is the type of random variable `Sequence1`?
-Sequence 1 is a continuous random variable with a raleigh distribution of varying amplitudes
-that is partially dependent on the sine value of a random number between 0 and 2pi.
+Sequence 1 looks like it is a Gaussian random variable.
 What is its mean and variance?
-The mean of a Sequence1 is about 0, and it's variance about 1.
+The mean of a Sequence1 is about 0, and it's variance is about 1.
 What is the type of random variable `Sequence2`?
-Sequence 2 is a continuous random variable with a raleigh distribution of varying amplitudes
-that is partially dependent on the cosine value of a random number between 0 and 2pi.
+Sequence 2 looks like it is a Gaussian random variable.
 What is its mean and variance?
-The mean of a Sequence2 looks to be about 0, and it's variance about 1.
+The mean of a Sequence2 is about 0, and it's variance is about 1.
 What is the type of random variable `Sequence3`?
-Sequence3 is a continuous random variable resulting from two rayleigh distributions that are
-partially dependent on cosine and sin of random numbers between 0 and 2pi that are multiplied by eachother.
+Sequence3 looks like it is an exponential random variable.
 What is its mean and variance?
-The mean of a Sequence3 is about 2, and it's variance about 4.
+The mean of a Sequence3 is about 2, and it's variance is about 4.
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 The empirical covariance between Sequence1 and Sequence2 is very close to zero.
 Do you think they are independent? Justify your answer.
 I do think that Sequence1 and Sequence 2 are independent. I am led to believe this because
 the covariance between the two is almost 0, showing they have little impact on eachother
-and are likely independent.
+and are therefore likely independent.
 """
