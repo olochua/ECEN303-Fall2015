@@ -54,18 +54,29 @@ pylab.setp(patches, 'facecolor', 'y', 'alpha', 0.75)
 
 pylab.show()
 
+print(numpy.mean(Sequence1)) #"Mean of Sequence1"
+print(numpy.var(Sequence1)) #"Variance of Sequence 1"
+print(numpy.mean(Sequence2)) #"Mean of Sequence 2"
+print(numpy.var(Sequence2)) #"Variance of Sequence 2"
+print(numpy.mean(Sequence3)) #"Mean of Sequence 3"
+print(numpy.var(Sequence3)) #"Variance of Sequence 3"
+
 """
 What is the type of random variable `Sequence1`?
 Gaussian Distribution
 What is its mean and variance?
-Mean = 0
+Mean = -0.008
+Var = 0.997
 What is the type of random variable `Sequence2`?
 Gaussian Distribution
 What is its mean and variance?
-Mean=0
+Mean = -0.004
+Var = 1.002
 What is the type of random variable `Sequence3`?
 Exponential Distribution
 What is its mean and variance?
+Mean = 1.999
+Var = 4.015
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 Do you think they are independent? Justify your answer.
 """
