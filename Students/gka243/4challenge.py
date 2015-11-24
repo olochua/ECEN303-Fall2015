@@ -1,6 +1,6 @@
 __NetID__ = "gka243"
 __GitHubID__ = "gka243"
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __Challenge__ = "4"
 
 """
@@ -55,11 +55,12 @@ pylab.setp(patches, 'facecolor', 'y', 'alpha', 0.75)
 pylab.show()
 
 print(numpy.mean(Sequence1)) #"Mean of Sequence1"
-print(numpy.var(Sequence1)) #"Variance of Sequence 1"
-print(numpy.mean(Sequence2)) #"Mean of Sequence 2"
-print(numpy.var(Sequence2)) #"Variance of Sequence 2"
-print(numpy.mean(Sequence3)) #"Mean of Sequence 3"
-print(numpy.var(Sequence3)) #"Variance of Sequence 3"
+print(numpy.var(Sequence1)) #"Variance of Sequence1"
+print(numpy.mean(Sequence2)) #"Mean of Sequence2"
+print(numpy.var(Sequence2)) #"Variance of Sequence2"
+print(numpy.mean(Sequence3)) #"Mean of Sequence3"
+print(numpy.var(Sequence3)) #"Variance of Sequence3"
+print(numpy.cov(Sequence1,Sequence2)) #Covariance of Sequence one and two (top right and bottom left values)
 
 """
 What is the type of random variable `Sequence1`?
@@ -78,6 +79,10 @@ What is its mean and variance?
 Mean = 1.999
 Var = 4.015
 What is the empirical covariance between `Sequence1` and `Sequence2`?
+Covariance = 0.001
 Do you think they are independent? Justify your answer.
+Yes, because the covariance of sequence1, sequence2 is very close to zero, it is possible for them to be independent. 
+It is farther proven that they show independence because the sum of the expectations for Sequence1^2 and Sequence2^2 is
+equal to the expectation of the sum Sequence1^2 + Sequence2^2.
 """
 
