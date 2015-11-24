@@ -1,6 +1,6 @@
 __NetID__ = "cprestwood2012"
 __GitHubID__ = "cprestwood2012"
-__SelfGrade__ = ""
+__SelfGrade__ = "4"
 __Challenge__ = "4"
 
 """
@@ -93,6 +93,7 @@ The mean of Sequence 3 is about 2.008 and the variance is about 4.
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 The value of this covariance results out to around 1.
 Do you think they are independent? Justify your answer.
-The definition of indepence in this case is for the covariance of the two values to give a result close to zero, so as stated above I would believe Sequence 1 and Sequence 2 to be independent.
+The definition of indepence in this case is for the covariance of the two values to give a result close to zero,
+so as stated above I would believe Sequence 1 and Sequence 2 to be independent.
 """
 
