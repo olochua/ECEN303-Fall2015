@@ -80,7 +80,7 @@ print "var 3 = %f " %var3
 #expectation2 = sum
 #sum = 0
 #for i in range (0, len(Sequence1)):
-#    sum += (((Sequence1[i-1]*Sequence1[i-1])*(i)))
+#    sum += (((Sequence1[i-1]*Sequence2[i-1])*(i)))
 #expectation3 = sum
 #multExp = expectation1*expectation2
 #Expmult = expectation3
