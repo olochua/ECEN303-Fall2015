@@ -1,7 +1,7 @@
-__NetID__ = ""
+__NetID__ = "421008718"
 __GitHubID__ = ""
-__SelfGrade__ = ""
-__Challenge__ = "4"
+__SelfGrade__ = "4"
+__Challenge__ = "4.2"
 
 """
 Random Signals and Systems
@@ -30,7 +30,7 @@ pylab.figure()
 n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
 pylab.setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
-pylab.show()
+
 
 Sequence1 = []
 Sequence2 = []
@@ -40,18 +40,37 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+pylab.show()
 
-"""
-What is the type of random variable `Sequence1`?
-What is its mean and variance?
-What is the type of random variable `Sequence2`?
-What is its mean and variance?
-What is the type of random variable `Sequence3`?
-What is its mean and variance?
-What is the empirical covariance between `Sequence1` and `Sequence2`?
-Do you think they are independent? Justify your answer.
-"""
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'r', 'alpha', 0.75)
 
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'y', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'b', 'alpha', 0.75)
+
+
+print("What is the type of random variable `Sequence1`?")
+print("continuous")
+print("What is its mean and variance?")
+print(numpy.mean(Sequence1))
+print(numpy.var(Sequence1))
+print("What is the type of random variable `Sequence2`?")
+print("Continuous")
+print("What is its mean and variance?")
+print(numpy.mean(Sequence2))
+print(numpy.var(Sequence2))
+print("What is the type of random variable `Sequence3`?")
+print("Continuous")
+print("What is its mean and variance?")
+print(numpy.mean(Sequence3))
+print(numpy.var(Sequence3))
+print("What is the empirical covariance between `Sequence1` and `Sequence2`?")
+print(numpy.cov(Sequence1,Sequence2))
+print("Do you think they are independent? Justify your answer.")
+print("Yes. They both dip near zero in the middle.")
