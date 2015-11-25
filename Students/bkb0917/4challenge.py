@@ -31,7 +31,6 @@ pylab.figure()
 n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
 pylab.setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
-pylab.show()
 
 Sequence1 = []
 Sequence2 = []
@@ -89,7 +88,7 @@ What is the empirical covariance between `Sequence1` and `Sequence2`?
 Empirical Covariance: 0
 Do you think they are independent? Justify your answer.
 Yes, because the covariance of two variables for example X and Y is equivalent to
-Cov(X,Y) = E[XY] - E[X]E[Y] and since the covariance is 0, then
+ = E[XY] - E[X]E[Y] and since the covariance is 0, then
 E[XY] = E[X]E[Y] and thus the two random variables Sequence1 and
 Sequence 2 are independent.
 """
