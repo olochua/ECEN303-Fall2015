@@ -96,6 +96,6 @@ What is the empirical covariance between `Sequence1` and `Sequence2`?
 
 Do you think they are independent? Justify your answer.
 *Since the covariance is roughly zero, i would think they are independent
-
+ 
 """
 
