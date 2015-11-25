@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "katy.nix"
+__GitHubID__ = "KANix94"
+__SelfGrade__ = "4.5"
 __Challenge__ = "4"
 
 """
@@ -40,18 +40,35 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+pylab.show()
+
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'r', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'y', 'alpha', 0.75)
+
+pylab.figure()
+n, bins, patches = pylab.hist(RayleighList, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'b', 'alpha', 0.75)
 
 """
 What is the type of random variable `Sequence1`?
+Gaussian Random Variable
 What is its mean and variance?
+Mean = 0, Variance = 1
 What is the type of random variable `Sequence2`?
+Gaussian Random Variable
 What is its mean and variance?
+Mean = 0, Variance = 1
 What is the type of random variable `Sequence3`?
+Exponential Distributaion Random Variable
 What is its mean and variance?
+Mean = 2, Variance = 4
 What is the empirical covariance between `Sequence1` and `Sequence2`?
+Covariance = 0
 Do you think they are independent? Justify your answer.
+Yes, the covariance is zero.  
 """
-
