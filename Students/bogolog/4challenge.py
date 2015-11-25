@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "stephensattler"
+__GitHubID__ = "bogolog"
+__SelfGrade__ = "5"
 __Challenge__ = "4"
 
 """
@@ -40,18 +40,51 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence2, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'r', 'alpha', 0.75)
+pylab.title('Sequence2')
+
+pylab.figure()
+n, bins, patches = pylab.hist(Sequence3, 1000, normed=1, histtype='stepfilled')
+pylab.setp(patches, 'facecolor', 'c', 'alpha', 0.75)
+pylab.title('Sequence3')
+
+print("Mean and Variance of Sequence 3")
+print(numpy.mean(Sequence3))
+print(numpy.var(Sequence3))
+
+print("Mean and Variance of Sequence 2")
+print(numpy.mean(Sequence2))
+print(numpy.var(Sequence2))
+
+print ("Covariance of Sequence 1 and Sequence 2")
+print (numpy.cov(Sequence1,Sequence2))
 
 """
 What is the type of random variable `Sequence1`?
+a continuous random variable dependent on sine
+
 What is its mean and variance?
+mean is almost zero and variance is 1
+
 What is the type of random variable `Sequence2`?
+a continuous random variable dependent on cosine
+
 What is its mean and variance?
+mean is almost zero and the variance is 1
+
 What is the type of random variable `Sequence3`?
+a continuous random variable dependent on sine multiplied by a dependent on cosine. Leaves uniform distribution.
+
 What is its mean and variance?
+mean is 2 and variance is 4
+
 What is the empirical covariance between `Sequence1` and `Sequence2`?
+nearly zero
+
 Do you think they are independent? Justify your answer.
+if variables are independent, the covariance would be zero such as in seq 1 & 2. They don't affect each other.
+
 """
 
