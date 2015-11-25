@@ -87,8 +87,8 @@ Variance: 4
 What is the empirical covariance between `Sequence1` and `Sequence2`?
 Empirical Covariance: 0
 Do you think they are independent? Justify your answer.
-Yes, because the covariance of two variables for example X and Y is equivalent to
- = E[XY] - E[X]E[Y] and since the covariance is 0, then
+Yes, because the covariance of two random variables for example X and Y is equivalent to
+covariance of X and Y = E[XY] - E[X]E[Y] and since the covariance is 0, then
 E[XY] = E[X]E[Y] and thus the two random variables Sequence1 and
 Sequence 2 are independent.
 """
