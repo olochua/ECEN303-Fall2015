@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "Steph1995"
+__GitHubID__ = "stephaniedemco"
+__SelfGrade__ = "5"
 __Challenge__ = "4"
 
 """
@@ -40,18 +40,48 @@ for trial2 in range(0, TrialNumber):
     Sequence2.append(math.cos(UniformList[trial2]) * RayleighList[trial2])
     Sequence3.append(Sequence1[trial2]**2 + Sequence2[trial2]**2)
 
-#
-# EDIT
-#
+pylab.figure()
+n , bins , patches = pylab.hist(Sequence1 , 1000 , normed=1 , histtype='stepfilled')
+pylab.setp(patches , 'facecolor' , 'b' , 'alpha' , 0.75)
+print(numpy.mean( Sequence1 ) )
+print(numpy.var( Sequence1 ) )
+
+pylab.figure()
+n , bins , patches = pylab.hist(Sequence1 , 1000 , normed=1 , histtype='stepfilled')
+pylab.setp(patches , 'facecolor' , 'b' , 'alpha' , 0.75)
+print(numpy.mean( Sequence2 ) )
+print(numpy.var( Sequence2 ) )
+
+pylab.figure()
+n , bins , patches = pylab.hist(Sequence1 , 1000 , normed=1 , histtype='stepfilled')
+pylab.setp(patches , 'facecolor' , 'b' , 'alpha' , 0.75)
+print(numpy.mean( Sequence3 ) )
+print(numpy.var( Sequence3 ) )
+
+print( numpy.cov( Sequence1 , Sequence2 ) )
+
+pylab.show()
+
 
 """
 What is the type of random variable `Sequence1`?
+continuous random variable
 What is its mean and variance?
+mean is very small, close to 0
+var is 1
 What is the type of random variable `Sequence2`?
+continuous random variable
 What is its mean and variance?
+mean is 0
+var is 1
 What is the type of random variable `Sequence3`?
+continuous random variable
 What is its mean and variance?
+mean is 2
+var is 4
 What is the empirical covariance between `Sequence1` and `Sequence2`?
+covariance is close to 0
 Do you think they are independent? Justify your answer.
+yes, they are independant because the covariance is almost 0
 """
 
