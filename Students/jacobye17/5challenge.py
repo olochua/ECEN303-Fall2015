@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "jacobye17"
+__GitHubID__ = "jacobye17"
+__SelfGrade__ = "4"
 __Challenge__ = "5"
 
 """
@@ -37,6 +37,14 @@ for trial1 in range(0, TrialNumber):
     ExpovariateList.append(RunExpovariate/(1.0*SampleNumber))
     ParetoList.append(RunParetoList/(1.0*SampleNumber))
 
+print numpy.mean(GaussianList)
+print numpy.var(GaussianList)
+
+print numpy.mean(BernoulliList)
+print numpy.var(BernoulliList)
+
+print numpy.mean(ExpovariateList)
+print numpy.var(ExpovariateList)
 
 pylab.figure()
 n, bins, patches = pylab.hist(GaussianList, 1000, normed=1, histtype='stepfilled')
@@ -57,15 +65,17 @@ pylab.setp(patches, 'facecolor', 'c', 'alpha', 0.75)
 pylab.show()
 
 """
-What is the type of random variable `GaussianList`?
-What is its mean and variance?
+What is the type of random variable `GaussianList`? Gaussian RV
+What is its mean and variance? Mean = 0.000534112130383     Variance = 0.000991433113328
 
-What is the type of random variable `BernoulliList`?
-What is its mean and variance?
+What is the type of random variable `BernoulliList`? Bernoulli RV
+What is its mean and variance? Mean = 0.5002133         Variance = 0.00025491580311
 
-What is the type of random variable `ExpovariateList`?
-What is its mean and variance?
+What is the type of random variable `ExpovariateList`? Poisson RV
+What is its mean and variance? Mean = 0.999780887256    Variance = 0.00100225112311
 
-What is going on with `ParetoList`?
+What is going on with `ParetoList`? A Pareto distribution is skewed to the right. It is defined by two variables, xm,
+the lowest value the RV can take and alpha, which is the degree of concentration of the distribution. The smaller alpha
+the heavier the tail of distribution
 """
 
