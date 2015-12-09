@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "ren0587"
+__GitHubID__ = "wenku9332"
+__SelfGrade__ = "5"
 __Challenge__ = "5"
 
 """
@@ -58,14 +58,26 @@ pylab.show()
 
 """
 What is the type of random variable `GaussianList`?
+It is a Gaussian Random Variable.
+
 What is its mean and variance?
+Mean = - 0.00316
+Variance =0.00101
 
 What is the type of random variable `BernoulliList`?
+This is a bernoulli random variable.
+
 What is its mean and variance?
+Mean = 0.4999
+variance = 0.000252
 
 What is the type of random variable `ExpovariateList`?
+It is a Poisson random variable.
 What is its mean and variance?
+Mean = 1.000
+Variance = 0.00102
 
 What is going on with `ParetoList`?
+It spikes up quickly and decay exponentially afterward.
 """
 
