@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "dgf378"
+__GitHubID__ = "dfawcett"
+__SelfGrade__ = "5"
 __Challenge__ = "5"
 
 """
@@ -37,7 +37,6 @@ for trial1 in range(0, TrialNumber):
     ExpovariateList.append(RunExpovariate/(1.0*SampleNumber))
     ParetoList.append(RunParetoList/(1.0*SampleNumber))
 
-
 pylab.figure()
 n, bins, patches = pylab.hist(GaussianList, 1000, normed=1, histtype='stepfilled')
 pylab.setp(patches, 'facecolor', 'k', 'alpha', 0.75)
@@ -58,14 +57,21 @@ pylab.show()
 
 """
 What is the type of random variable `GaussianList`?
+A Gaussian Random Variable
 What is its mean and variance?
+Its mean is zero and its variance is one
 
 What is the type of random variable `BernoulliList`?
+A Bernoulli Random Variable
 What is its mean and variance?
+The mean is .5 and the variance is .25
 
 What is the type of random variable `ExpovariateList`?
+An exponential random variable
 What is its mean and variance?
+Its mean is one and its variance is one
 
 What is going on with `ParetoList`?
+The ParetoList is a Pareto Random variable. Its graph takes on a Pareto
+distribution with alpha = 1.5 and Xm = 1. 
 """
-
