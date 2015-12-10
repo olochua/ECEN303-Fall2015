@@ -1,5 +1,5 @@
-__NetID__ = ""
-__GitHubID__ = ""
+__NetID__ = "gka243"
+__GitHubID__ = "gka243"
 __SelfGrade__ = ""
 __Challenge__ = "5"
 
@@ -56,16 +56,27 @@ pylab.setp(patches, 'facecolor', 'c', 'alpha', 0.75)
 
 pylab.show()
 
+print(numpy.mean(GaussianList))
+print(numpy.var(GaussianList))
+print(numpy.mean(BernoulliList))
+print(numpy.var(BernoulliList))
+print(numpy.mean(ExpovariateList))
+print(numpy.var(ExpovariateList))
+
 """
 What is the type of random variable `GaussianList`?
+Gaussian random Variable
 What is its mean and variance?
-
+Mean:0 Variance: 0
 What is the type of random variable `BernoulliList`?
+Bernoulli random Variable
 What is its mean and variance?
-
+Mean:0.5 Variance:0
 What is the type of random variable `ExpovariateList`?
+Exponential random Variable
 What is its mean and variance?
-
+Mean:1 Variance:0
 What is going on with `ParetoList`?
+ParetoList makes a Pareto distribution, that has an alpha of 1.5, and Xm of 1
 """
 
