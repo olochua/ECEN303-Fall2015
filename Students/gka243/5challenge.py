@@ -1,6 +1,6 @@
 __NetID__ = "gka243"
 __GitHubID__ = "gka243"
-__SelfGrade__ = ""
+__SelfGrade__ = "5"
 __Challenge__ = "5"
 
 """
