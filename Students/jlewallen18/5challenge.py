@@ -58,14 +58,22 @@ pylab.show()
 
 """
 What is the type of random variable `GaussianList`?
+Gaussian RV
 What is its mean and variance?
+mean = 0 variance = 1
 
 What is the type of random variable `BernoulliList`?
+Bernoulli RV
 What is its mean and variance?
+mean = .5 and variance = .25
 
 What is the type of random variable `ExpovariateList`?
+Exponential RV
 What is its mean and variance?
+mean = 1 and its variance = 1
 
 What is going on with `ParetoList`?
+The ParetoList is a Pareto RV. The graph takes on a Pareto
+distribution with alpha = 1.5 and Xm = 1. 
 """
 
