@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "benj626"
+__GitHubID__ = "benj626"
+__SelfGrade__ = "5"
 __Challenge__ = "5"
 
 """
@@ -37,6 +37,14 @@ for trial1 in range(0, TrialNumber):
     ExpovariateList.append(RunExpovariate/(1.0*SampleNumber))
     ParetoList.append(RunParetoList/(1.0*SampleNumber))
 
+print numpy.mean(GaussianList)
+print numpy.var(GaussianList)
+
+print numpy.mean(BernoulliList)
+print numpy.var(BernoulliList)
+
+print numpy.mean(ExpovariateList)
+print numpy.var(ExpovariateList)
 
 pylab.figure()
 n, bins, patches = pylab.hist(GaussianList, 1000, normed=1, histtype='stepfilled')
@@ -58,14 +66,23 @@ pylab.show()
 
 """
 What is the type of random variable `GaussianList`?
+GaussianList is a Gaussian random variable.
 What is its mean and variance?
+Mean = 0
+Variance = 0
 
 What is the type of random variable `BernoulliList`?
+BernoulliList is a Bernoulli random variable.
 What is its mean and variance?
+Mean = 0.5
+Variance = 0
 
 What is the type of random variable `ExpovariateList`?
+ExpovariateList is a Exponential random variable.
 What is its mean and variance?
+Mean = 1
+Variance = 0
 
 What is going on with `ParetoList`?
+Pareto's value rises rapidly then decreases exponentially.
 """
-
