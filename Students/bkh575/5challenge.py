@@ -1,6 +1,6 @@
-__NetID__ = ""
-__GitHubID__ = ""
-__SelfGrade__ = ""
+__NetID__ = "bkh575"
+__GitHubID__ = "bkh575"
+__SelfGrade__ = "5"
 __Challenge__ = "5"
 
 """
@@ -58,14 +58,21 @@ pylab.show()
 
 """
 What is the type of random variable `GaussianList`?
+-Guassian Random Variable
 What is its mean and variance?
+Mean = 0, Var = 1
 
 What is the type of random variable `BernoulliList`?
+Bernoulli Random Variable
 What is its mean and variance?
+Mean = .5, Var = .25
 
 What is the type of random variable `ExpovariateList`?
+Exponential Random Varible
 What is its mean and variance?
-
+Mean = 1, Var = 1
 What is going on with `ParetoList`?
+It is a Pareto Random Variable. It's graph represents a Pareto distribution with alpha = 1.5, and Xm = 1.
+
 """
 
